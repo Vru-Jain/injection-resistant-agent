@@ -6,3 +6,4 @@ __pycache__/
 data/rollouts/
 results/*.tmp
 .modal/
+.superpowers/

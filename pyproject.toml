@@ -1,0 +1,20 @@
+[project]
+name = "desk"
+version = "0.1.0"
+description = "Injection-resistant tool agent on Tiny Aya: desk sandbox, injection suite, scoring, DPO pipeline"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+dependencies = ["datasets", "huggingface_hub"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["desk"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
