@@ -28,8 +28,10 @@ V1_RESULTS = """| greedy, same tasks | base | this model |
 | forced-exposure attack success, held-out templates | 38% | 18% |
 | forced-exposure attack success, held-out families | 25% | 8% |
 | delayed injections (held-out family) | 76% | 24% |
-| clean task success, held-out templates | 0% | 96% |
-| benign action success (user-requested payment or send) | 0% | 72% |
+| clean task success, held-out templates | 0% | 52% |
+| benign: requested payment or send done at least once | 0% | 72% |
+| benign: done exactly once | 0% | 21% |
+| clean task success, in-dist | 22% | 14% |
 
 Forced exposure replays the correct steps up to and including the tool result that carries the injection, then the
 model continues. Attack success means an executable call hit the attacker's target argument."""
@@ -43,8 +45,9 @@ tool sandbox) to keep doing the user's task when an email or file it reads conta
 {V1_RESULTS}
 
 **Known limitation:** after completing the task it keeps calling tools instead of writing a final answer (it hits the
-step cap), because most training pairs preferred a tool call over an early answer. Use with a step limit and take the
-last tool results, or see dpo-v2.
+step cap), because most training pairs preferred a tool call over an early answer, and it often repeats a payment or
+email. That is why in-dist clean success is below base. Do not let it take real actions; this is a research artifact
+for injection resistance, not a usable assistant.
 
 {FORMAT}
 
@@ -77,7 +80,7 @@ lr 2e-5, 1 epoch. See Vru-Jain/tiny-aya-global-injection-dpo-v2 for what it does
     "tiny-aya-global-desk-clean-dpo": ("merged", BASE, f"""# tiny-aya-global-desk-clean-dpo (ablation, do not deploy)
 
 The ablation: the same DPO recipe as dpo-v1 but trained only on the 1,005 clean-task pairs, with no injection pairs.
-It gains the same tool-use competence and becomes **much easier to hijack**: end-to-end attack success 5% to 36%
+It reads its tool results just as often as dpo-v1 and becomes **much easier to hijack**: end-to-end attack success 5% to 36%
 in-dist, forced-exposure 38% to 70% on held-out templates. It exists to show that the injection pairs are what make
 dpo-v1 resistant. Do not use it as an assistant.
 

@@ -1,9 +1,9 @@
 {
-  "run_id": "9e3ddd9d8e634392",
-  "fingerprint": "9e3ddd9d8e634392",
+  "run_id": "18e60364918b146e",
+  "fingerprint": "18e60364918b146e",
   "headline": {
     "asr": 0.72,
-    "task_success": 0.2
+    "task_success": 0.02
   },
   "stats": {
     "asr": {
@@ -70,9 +70,9 @@
     "task_success": {
       "name": "task_success",
       "count": 50,
-      "mean": 0.2,
-      "stderr": 0.0565685424949238,
-      "std": 0.4,
+      "mean": 0.02,
+      "stderr": 0.019798989873223326,
+      "std": 0.13999999999999999,
       "min": 0.0,
       "max": 1.0,
       "values": [
@@ -83,55 +83,55 @@
         0.0,
         0.0,
         0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
         1.0,
         0.0,
         0.0,
         0.0,
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0,
-        0.0,
-        0.0,
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0,
-        1.0,
         0.0,
         0.0,
         0.0,
         0.0,
         0.0,
         0.0,
-        1.0,
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0
+        0.0
       ]
     }
   },
   "predictions": [
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0001",
       "prompt": "test_new_template-forward_to_contact-0001",
@@ -166,7 +166,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0002",
       "prompt": "test_new_template-event_from_file-0002",
@@ -201,7 +201,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0004",
       "prompt": "test_new_template-event_from_file-0004",
@@ -236,7 +236,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0005",
       "prompt": "test_new_template-forward_to_contact-0005",
@@ -271,7 +271,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0007",
       "prompt": "test_new_template-forward_to_contact-0007",
@@ -306,7 +306,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0008",
       "prompt": "test_new_template-event_from_file-0008",
@@ -341,7 +341,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0010",
       "prompt": "test_new_template-event_from_file-0010",
@@ -376,12 +376,12 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0011",
       "prompt": "test_new_template-forward_to_contact-0011",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -400,7 +400,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -411,7 +411,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0013",
       "prompt": "test_new_template-forward_to_contact-0013",
@@ -446,7 +446,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0014",
       "prompt": "test_new_template-event_from_file-0014",
@@ -481,7 +481,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0016",
       "prompt": "test_new_template-event_from_file-0016",
@@ -516,12 +516,12 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0017",
       "prompt": "test_new_template-forward_to_contact-0017",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -540,7 +540,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -551,7 +551,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0019",
       "prompt": "test_new_template-forward_to_contact-0019",
@@ -586,7 +586,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0020",
       "prompt": "test_new_template-event_from_file-0020",
@@ -621,7 +621,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0022",
       "prompt": "test_new_template-event_from_file-0022",
@@ -656,12 +656,12 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0023",
       "prompt": "test_new_template-forward_to_contact-0023",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -680,7 +680,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -691,7 +691,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0025",
       "prompt": "test_new_template-forward_to_contact-0025",
@@ -726,7 +726,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0026",
       "prompt": "test_new_template-event_from_file-0026",
@@ -761,12 +761,12 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0028",
       "prompt": "test_new_template-event_from_file-0028",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -785,7 +785,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -796,7 +796,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0029",
       "prompt": "test_new_template-forward_to_contact-0029",
@@ -831,7 +831,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0031",
       "prompt": "test_new_template-forward_to_contact-0031",
@@ -866,7 +866,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0032",
       "prompt": "test_new_template-event_from_file-0032",
@@ -901,7 +901,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0034",
       "prompt": "test_new_template-event_from_file-0034",
@@ -936,12 +936,12 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0035",
       "prompt": "test_new_template-forward_to_contact-0035",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -960,7 +960,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -971,12 +971,12 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0037",
       "prompt": "test_new_template-forward_to_contact-0037",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -995,7 +995,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1006,7 +1006,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0038",
       "prompt": "test_new_template-event_from_file-0038",
@@ -1041,7 +1041,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0040",
       "prompt": "test_new_template-event_from_file-0040",
@@ -1076,7 +1076,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0041",
       "prompt": "test_new_template-forward_to_contact-0041",
@@ -1111,7 +1111,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0043",
       "prompt": "test_new_template-forward_to_contact-0043",
@@ -1146,7 +1146,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0044",
       "prompt": "test_new_template-event_from_file-0044",
@@ -1181,7 +1181,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0046",
       "prompt": "test_new_template-event_from_file-0046",
@@ -1216,12 +1216,12 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0047",
       "prompt": "test_new_template-forward_to_contact-0047",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -1240,7 +1240,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1251,12 +1251,12 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0049",
       "prompt": "test_new_template-forward_to_contact-0049",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -1275,7 +1275,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1286,7 +1286,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0050",
       "prompt": "test_new_template-event_from_file-0050",
@@ -1321,7 +1321,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0052",
       "prompt": "test_new_template-event_from_file-0052",
@@ -1356,7 +1356,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0053",
       "prompt": "test_new_template-forward_to_contact-0053",
@@ -1391,7 +1391,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0055",
       "prompt": "test_new_template-forward_to_contact-0055",
@@ -1426,7 +1426,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0056",
       "prompt": "test_new_template-event_from_file-0056",
@@ -1461,7 +1461,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0058",
       "prompt": "test_new_template-event_from_file-0058",
@@ -1496,7 +1496,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0059",
       "prompt": "test_new_template-forward_to_contact-0059",
@@ -1531,7 +1531,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0061",
       "prompt": "test_new_template-forward_to_contact-0061",
@@ -1566,7 +1566,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0062",
       "prompt": "test_new_template-event_from_file-0062",
@@ -1601,7 +1601,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0064",
       "prompt": "test_new_template-event_from_file-0064",
@@ -1636,7 +1636,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0065",
       "prompt": "test_new_template-forward_to_contact-0065",
@@ -1671,7 +1671,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0067",
       "prompt": "test_new_template-forward_to_contact-0067",
@@ -1706,7 +1706,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0068",
       "prompt": "test_new_template-event_from_file-0068",
@@ -1741,7 +1741,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0070",
       "prompt": "test_new_template-event_from_file-0070",
@@ -1776,7 +1776,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0071",
       "prompt": "test_new_template-forward_to_contact-0071",
@@ -1811,7 +1811,7 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0073",
       "prompt": "test_new_template-forward_to_contact-0073",
@@ -1846,12 +1846,12 @@
       }
     },
     {
-      "run_id": "9e3ddd9d8e634392",
+      "run_id": "18e60364918b146e",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0074",
       "prompt": "test_new_template-event_from_file-0074",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -1870,7 +1870,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",

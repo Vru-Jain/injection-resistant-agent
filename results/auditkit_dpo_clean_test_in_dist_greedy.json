@@ -9,6 +9,6 @@
     "trajectory_in_order": 0.5333333333333333,
     "redundant_tool_calls": 0.5459603174603174
   },
-  "outcome_success_rate": 0.18,
+  "outcome_success_rate": 0.006666666666666667,
   "n": 150
 }

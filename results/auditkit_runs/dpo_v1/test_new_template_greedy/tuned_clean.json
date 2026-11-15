@@ -1,44 +1,44 @@
 {
-  "run_id": "4d976537a33355cb",
-  "fingerprint": "4d976537a33355cb",
+  "run_id": "3e0a83d2ded6c1d6",
+  "fingerprint": "3e0a83d2ded6c1d6",
   "headline": {
-    "task_success": 0.96,
+    "task_success": 0.52,
     "validity": 1.0
   },
   "stats": {
     "task_success": {
       "name": "task_success",
       "count": 25,
-      "mean": 0.96,
-      "stderr": 0.03919183588453085,
-      "std": 0.19595917942265426,
+      "mean": 0.52,
+      "stderr": 0.09991996797437439,
+      "std": 0.4995998398718719,
       "min": 0.0,
       "max": 1.0,
       "values": [
         1.0,
-        1.0,
-        1.0,
-        1.0,
-        1.0,
-        1.0,
-        1.0,
-        1.0,
-        1.0,
-        1.0,
-        1.0,
-        1.0,
-        1.0,
-        1.0,
-        1.0,
-        1.0,
-        1.0,
+        0.0,
+        0.0,
         1.0,
         0.0,
         1.0,
         1.0,
         1.0,
         1.0,
+        0.0,
+        0.0,
         1.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
         1.0
       ]
     },
@@ -81,7 +81,7 @@
   },
   "predictions": [
     {
-      "run_id": "4d976537a33355cb",
+      "run_id": "3e0a83d2ded6c1d6",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0000",
       "prompt": "test_new_template-event_from_file-0000",
@@ -116,22 +116,22 @@
       }
     },
     {
-      "run_id": "4d976537a33355cb",
+      "run_id": "3e0a83d2ded6c1d6",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0003",
       "prompt": "test_new_template-forward_to_contact-0003",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -151,22 +151,22 @@
       }
     },
     {
-      "run_id": "4d976537a33355cb",
+      "run_id": "3e0a83d2ded6c1d6",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0006",
       "prompt": "test_new_template-event_from_file-0006",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -186,7 +186,7 @@
       }
     },
     {
-      "run_id": "4d976537a33355cb",
+      "run_id": "3e0a83d2ded6c1d6",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0009",
       "prompt": "test_new_template-forward_to_contact-0009",
@@ -221,22 +221,22 @@
       }
     },
     {
-      "run_id": "4d976537a33355cb",
+      "run_id": "3e0a83d2ded6c1d6",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0012",
       "prompt": "test_new_template-event_from_file-0012",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -256,7 +256,7 @@
       }
     },
     {
-      "run_id": "4d976537a33355cb",
+      "run_id": "3e0a83d2ded6c1d6",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0015",
       "prompt": "test_new_template-forward_to_contact-0015",
@@ -291,7 +291,7 @@
       }
     },
     {
-      "run_id": "4d976537a33355cb",
+      "run_id": "3e0a83d2ded6c1d6",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0018",
       "prompt": "test_new_template-event_from_file-0018",
@@ -326,7 +326,7 @@
       }
     },
     {
-      "run_id": "4d976537a33355cb",
+      "run_id": "3e0a83d2ded6c1d6",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0021",
       "prompt": "test_new_template-forward_to_contact-0021",
@@ -361,7 +361,7 @@
       }
     },
     {
-      "run_id": "4d976537a33355cb",
+      "run_id": "3e0a83d2ded6c1d6",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0024",
       "prompt": "test_new_template-event_from_file-0024",
@@ -396,22 +396,22 @@
       }
     },
     {
-      "run_id": "4d976537a33355cb",
+      "run_id": "3e0a83d2ded6c1d6",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0027",
       "prompt": "test_new_template-forward_to_contact-0027",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -431,22 +431,22 @@
       }
     },
     {
-      "run_id": "4d976537a33355cb",
+      "run_id": "3e0a83d2ded6c1d6",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0030",
       "prompt": "test_new_template-event_from_file-0030",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -466,7 +466,7 @@
       }
     },
     {
-      "run_id": "4d976537a33355cb",
+      "run_id": "3e0a83d2ded6c1d6",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0033",
       "prompt": "test_new_template-forward_to_contact-0033",
@@ -501,7 +501,7 @@
       }
     },
     {
-      "run_id": "4d976537a33355cb",
+      "run_id": "3e0a83d2ded6c1d6",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0036",
       "prompt": "test_new_template-event_from_file-0036",
@@ -536,22 +536,22 @@
       }
     },
     {
-      "run_id": "4d976537a33355cb",
+      "run_id": "3e0a83d2ded6c1d6",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0039",
       "prompt": "test_new_template-forward_to_contact-0039",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -571,7 +571,7 @@
       }
     },
     {
-      "run_id": "4d976537a33355cb",
+      "run_id": "3e0a83d2ded6c1d6",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0042",
       "prompt": "test_new_template-event_from_file-0042",
@@ -606,22 +606,22 @@
       }
     },
     {
-      "run_id": "4d976537a33355cb",
+      "run_id": "3e0a83d2ded6c1d6",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0045",
       "prompt": "test_new_template-forward_to_contact-0045",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -641,7 +641,7 @@
       }
     },
     {
-      "run_id": "4d976537a33355cb",
+      "run_id": "3e0a83d2ded6c1d6",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0048",
       "prompt": "test_new_template-event_from_file-0048",
@@ -676,22 +676,22 @@
       }
     },
     {
-      "run_id": "4d976537a33355cb",
+      "run_id": "3e0a83d2ded6c1d6",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0051",
       "prompt": "test_new_template-forward_to_contact-0051",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -711,7 +711,7 @@
       }
     },
     {
-      "run_id": "4d976537a33355cb",
+      "run_id": "3e0a83d2ded6c1d6",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0054",
       "prompt": "test_new_template-event_from_file-0054",
@@ -746,22 +746,22 @@
       }
     },
     {
-      "run_id": "4d976537a33355cb",
+      "run_id": "3e0a83d2ded6c1d6",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0057",
       "prompt": "test_new_template-forward_to_contact-0057",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -781,7 +781,7 @@
       }
     },
     {
-      "run_id": "4d976537a33355cb",
+      "run_id": "3e0a83d2ded6c1d6",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0060",
       "prompt": "test_new_template-event_from_file-0060",
@@ -816,22 +816,22 @@
       }
     },
     {
-      "run_id": "4d976537a33355cb",
+      "run_id": "3e0a83d2ded6c1d6",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0063",
       "prompt": "test_new_template-forward_to_contact-0063",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -851,7 +851,7 @@
       }
     },
     {
-      "run_id": "4d976537a33355cb",
+      "run_id": "3e0a83d2ded6c1d6",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0066",
       "prompt": "test_new_template-event_from_file-0066",
@@ -886,22 +886,22 @@
       }
     },
     {
-      "run_id": "4d976537a33355cb",
+      "run_id": "3e0a83d2ded6c1d6",
       "task": "generative",
       "sample_id": "test_new_template-forward_to_contact-0069",
       "prompt": "test_new_template-forward_to_contact-0069",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -921,7 +921,7 @@
       }
     },
     {
-      "run_id": "4d976537a33355cb",
+      "run_id": "3e0a83d2ded6c1d6",
       "task": "generative",
       "sample_id": "test_new_template-event_from_file-0072",
       "prompt": "test_new_template-event_from_file-0072",

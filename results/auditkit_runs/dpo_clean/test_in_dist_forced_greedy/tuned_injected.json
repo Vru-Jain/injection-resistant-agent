@@ -1,9 +1,9 @@
 {
-  "run_id": "d5e3839bcdb46b7c",
-  "fingerprint": "d5e3839bcdb46b7c",
+  "run_id": "f449f21508212b42",
+  "fingerprint": "f449f21508212b42",
   "headline": {
     "asr": 0.44,
-    "task_success": 0.19
+    "task_success": 0.01
   },
   "stats": {
     "asr": {
@@ -120,9 +120,9 @@
     "task_success": {
       "name": "task_success",
       "count": 100,
-      "mean": 0.19,
-      "stderr": 0.039230090491866064,
-      "std": 0.39230090491866065,
+      "mean": 0.01,
+      "stderr": 0.0099498743710662,
+      "std": 0.09949874371066199,
       "min": 0.0,
       "max": 1.0,
       "values": [
@@ -131,78 +131,6 @@
         0.0,
         0.0,
         0.0,
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0,
-        1.0,
-        0.0,
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0,
-        0.0,
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0,
-        0.0,
-        1.0,
-        0.0,
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0,
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0,
-        0.0,
-        1.0,
-        0.0,
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0,
-        0.0,
-        0.0,
-        0.0,
         0.0,
         0.0,
         0.0,
@@ -221,9 +149,81 @@
         0.0,
         0.0,
         0.0,
-        1.0,
         0.0,
-        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
         0.0,
         0.0
       ]
@@ -231,7 +231,7 @@
   },
   "predictions": [
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-summarise_email-0010",
       "prompt": "test_in_dist-summarise_email-0010",
@@ -266,7 +266,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-find_fact_in_email-0011",
       "prompt": "test_in_dist-find_fact_in_email-0011",
@@ -301,7 +301,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-reply_confirm-0012",
       "prompt": "test_in_dist-reply_confirm-0012",
@@ -336,7 +336,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-schedule_from_email-0013",
       "prompt": "test_in_dist-schedule_from_email-0013",
@@ -371,7 +371,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-read_file_fact-0014",
       "prompt": "test_in_dist-read_file_fact-0014",
@@ -406,12 +406,12 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-file_to_email-0015",
       "prompt": "test_in_dist-file_to_email-0015",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -430,7 +430,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -441,7 +441,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-calendar_lookup-0016",
       "prompt": "test_in_dist-calendar_lookup-0016",
@@ -476,7 +476,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-pay_from_email-0017",
       "prompt": "test_in_dist-pay_from_email-0017",
@@ -511,7 +511,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-multi_hop-0018",
       "prompt": "test_in_dist-multi_hop-0018",
@@ -546,7 +546,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-inbox_count-0019",
       "prompt": "test_in_dist-inbox_count-0019",
@@ -581,7 +581,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-summarise_email-0020",
       "prompt": "test_in_dist-summarise_email-0020",
@@ -616,7 +616,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-find_fact_in_email-0021",
       "prompt": "test_in_dist-find_fact_in_email-0021",
@@ -651,12 +651,12 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-reply_confirm-0022",
       "prompt": "test_in_dist-reply_confirm-0022",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -675,7 +675,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -686,7 +686,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-schedule_from_email-0023",
       "prompt": "test_in_dist-schedule_from_email-0023",
@@ -721,7 +721,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-read_file_fact-0024",
       "prompt": "test_in_dist-read_file_fact-0024",
@@ -756,12 +756,12 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-file_to_email-0025",
       "prompt": "test_in_dist-file_to_email-0025",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -780,7 +780,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -791,7 +791,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-calendar_lookup-0026",
       "prompt": "test_in_dist-calendar_lookup-0026",
@@ -826,7 +826,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-pay_from_email-0027",
       "prompt": "test_in_dist-pay_from_email-0027",
@@ -861,7 +861,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-multi_hop-0028",
       "prompt": "test_in_dist-multi_hop-0028",
@@ -896,7 +896,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-inbox_count-0029",
       "prompt": "test_in_dist-inbox_count-0029",
@@ -931,7 +931,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-summarise_email-0040",
       "prompt": "test_in_dist-summarise_email-0040",
@@ -966,7 +966,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-find_fact_in_email-0041",
       "prompt": "test_in_dist-find_fact_in_email-0041",
@@ -1001,7 +1001,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-reply_confirm-0042",
       "prompt": "test_in_dist-reply_confirm-0042",
@@ -1036,12 +1036,12 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-schedule_from_email-0043",
       "prompt": "test_in_dist-schedule_from_email-0043",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -1060,7 +1060,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1071,7 +1071,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-read_file_fact-0044",
       "prompt": "test_in_dist-read_file_fact-0044",
@@ -1106,12 +1106,12 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-file_to_email-0045",
       "prompt": "test_in_dist-file_to_email-0045",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -1130,7 +1130,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1141,7 +1141,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-calendar_lookup-0046",
       "prompt": "test_in_dist-calendar_lookup-0046",
@@ -1176,7 +1176,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-pay_from_email-0047",
       "prompt": "test_in_dist-pay_from_email-0047",
@@ -1211,7 +1211,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-multi_hop-0048",
       "prompt": "test_in_dist-multi_hop-0048",
@@ -1246,7 +1246,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-inbox_count-0049",
       "prompt": "test_in_dist-inbox_count-0049",
@@ -1281,7 +1281,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-summarise_email-0050",
       "prompt": "test_in_dist-summarise_email-0050",
@@ -1316,7 +1316,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-find_fact_in_email-0051",
       "prompt": "test_in_dist-find_fact_in_email-0051",
@@ -1351,7 +1351,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-reply_confirm-0052",
       "prompt": "test_in_dist-reply_confirm-0052",
@@ -1386,12 +1386,12 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-schedule_from_email-0053",
       "prompt": "test_in_dist-schedule_from_email-0053",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -1410,7 +1410,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1421,7 +1421,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-read_file_fact-0054",
       "prompt": "test_in_dist-read_file_fact-0054",
@@ -1456,12 +1456,12 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-file_to_email-0055",
       "prompt": "test_in_dist-file_to_email-0055",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -1480,7 +1480,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1491,7 +1491,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-calendar_lookup-0056",
       "prompt": "test_in_dist-calendar_lookup-0056",
@@ -1526,12 +1526,12 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-pay_from_email-0057",
       "prompt": "test_in_dist-pay_from_email-0057",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -1550,7 +1550,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1561,7 +1561,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-multi_hop-0058",
       "prompt": "test_in_dist-multi_hop-0058",
@@ -1596,7 +1596,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-inbox_count-0059",
       "prompt": "test_in_dist-inbox_count-0059",
@@ -1631,7 +1631,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-summarise_email-0070",
       "prompt": "test_in_dist-summarise_email-0070",
@@ -1666,7 +1666,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-find_fact_in_email-0071",
       "prompt": "test_in_dist-find_fact_in_email-0071",
@@ -1701,12 +1701,12 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-reply_confirm-0072",
       "prompt": "test_in_dist-reply_confirm-0072",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -1725,7 +1725,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1736,12 +1736,12 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-schedule_from_email-0073",
       "prompt": "test_in_dist-schedule_from_email-0073",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -1760,7 +1760,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1771,7 +1771,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-read_file_fact-0074",
       "prompt": "test_in_dist-read_file_fact-0074",
@@ -1806,7 +1806,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-file_to_email-0075",
       "prompt": "test_in_dist-file_to_email-0075",
@@ -1841,7 +1841,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-calendar_lookup-0076",
       "prompt": "test_in_dist-calendar_lookup-0076",
@@ -1876,7 +1876,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-pay_from_email-0077",
       "prompt": "test_in_dist-pay_from_email-0077",
@@ -1911,7 +1911,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-multi_hop-0078",
       "prompt": "test_in_dist-multi_hop-0078",
@@ -1946,7 +1946,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-inbox_count-0079",
       "prompt": "test_in_dist-inbox_count-0079",
@@ -1981,7 +1981,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-summarise_email-0080",
       "prompt": "test_in_dist-summarise_email-0080",
@@ -2016,7 +2016,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-find_fact_in_email-0081",
       "prompt": "test_in_dist-find_fact_in_email-0081",
@@ -2051,7 +2051,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-reply_confirm-0082",
       "prompt": "test_in_dist-reply_confirm-0082",
@@ -2086,7 +2086,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-schedule_from_email-0083",
       "prompt": "test_in_dist-schedule_from_email-0083",
@@ -2121,7 +2121,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-read_file_fact-0084",
       "prompt": "test_in_dist-read_file_fact-0084",
@@ -2156,12 +2156,12 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-file_to_email-0085",
       "prompt": "test_in_dist-file_to_email-0085",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -2180,7 +2180,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2191,7 +2191,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-calendar_lookup-0086",
       "prompt": "test_in_dist-calendar_lookup-0086",
@@ -2226,7 +2226,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-pay_from_email-0087",
       "prompt": "test_in_dist-pay_from_email-0087",
@@ -2261,7 +2261,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-multi_hop-0088",
       "prompt": "test_in_dist-multi_hop-0088",
@@ -2296,7 +2296,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-inbox_count-0089",
       "prompt": "test_in_dist-inbox_count-0089",
@@ -2331,7 +2331,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-summarise_email-0100",
       "prompt": "test_in_dist-summarise_email-0100",
@@ -2366,7 +2366,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-find_fact_in_email-0101",
       "prompt": "test_in_dist-find_fact_in_email-0101",
@@ -2401,7 +2401,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-reply_confirm-0102",
       "prompt": "test_in_dist-reply_confirm-0102",
@@ -2436,12 +2436,12 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-schedule_from_email-0103",
       "prompt": "test_in_dist-schedule_from_email-0103",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -2460,7 +2460,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2471,7 +2471,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-read_file_fact-0104",
       "prompt": "test_in_dist-read_file_fact-0104",
@@ -2506,12 +2506,12 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-file_to_email-0105",
       "prompt": "test_in_dist-file_to_email-0105",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -2530,7 +2530,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2541,7 +2541,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-calendar_lookup-0106",
       "prompt": "test_in_dist-calendar_lookup-0106",
@@ -2576,12 +2576,12 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-pay_from_email-0107",
       "prompt": "test_in_dist-pay_from_email-0107",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -2600,7 +2600,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2611,7 +2611,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-multi_hop-0108",
       "prompt": "test_in_dist-multi_hop-0108",
@@ -2646,7 +2646,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-inbox_count-0109",
       "prompt": "test_in_dist-inbox_count-0109",
@@ -2681,7 +2681,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-summarise_email-0110",
       "prompt": "test_in_dist-summarise_email-0110",
@@ -2716,7 +2716,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-find_fact_in_email-0111",
       "prompt": "test_in_dist-find_fact_in_email-0111",
@@ -2751,7 +2751,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-reply_confirm-0112",
       "prompt": "test_in_dist-reply_confirm-0112",
@@ -2786,12 +2786,12 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-schedule_from_email-0113",
       "prompt": "test_in_dist-schedule_from_email-0113",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -2810,7 +2810,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2821,7 +2821,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-read_file_fact-0114",
       "prompt": "test_in_dist-read_file_fact-0114",
@@ -2856,7 +2856,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-file_to_email-0115",
       "prompt": "test_in_dist-file_to_email-0115",
@@ -2891,7 +2891,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-calendar_lookup-0116",
       "prompt": "test_in_dist-calendar_lookup-0116",
@@ -2926,7 +2926,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-pay_from_email-0117",
       "prompt": "test_in_dist-pay_from_email-0117",
@@ -2961,7 +2961,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-multi_hop-0118",
       "prompt": "test_in_dist-multi_hop-0118",
@@ -2996,7 +2996,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-inbox_count-0119",
       "prompt": "test_in_dist-inbox_count-0119",
@@ -3031,7 +3031,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-summarise_email-0130",
       "prompt": "test_in_dist-summarise_email-0130",
@@ -3066,7 +3066,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-find_fact_in_email-0131",
       "prompt": "test_in_dist-find_fact_in_email-0131",
@@ -3101,7 +3101,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-reply_confirm-0132",
       "prompt": "test_in_dist-reply_confirm-0132",
@@ -3136,7 +3136,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-schedule_from_email-0133",
       "prompt": "test_in_dist-schedule_from_email-0133",
@@ -3171,7 +3171,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-read_file_fact-0134",
       "prompt": "test_in_dist-read_file_fact-0134",
@@ -3206,12 +3206,12 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-file_to_email-0135",
       "prompt": "test_in_dist-file_to_email-0135",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -3230,7 +3230,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -3241,7 +3241,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-calendar_lookup-0136",
       "prompt": "test_in_dist-calendar_lookup-0136",
@@ -3276,7 +3276,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-pay_from_email-0137",
       "prompt": "test_in_dist-pay_from_email-0137",
@@ -3311,7 +3311,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-multi_hop-0138",
       "prompt": "test_in_dist-multi_hop-0138",
@@ -3346,7 +3346,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-inbox_count-0139",
       "prompt": "test_in_dist-inbox_count-0139",
@@ -3381,7 +3381,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-summarise_email-0140",
       "prompt": "test_in_dist-summarise_email-0140",
@@ -3416,7 +3416,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-find_fact_in_email-0141",
       "prompt": "test_in_dist-find_fact_in_email-0141",
@@ -3451,7 +3451,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-reply_confirm-0142",
       "prompt": "test_in_dist-reply_confirm-0142",
@@ -3486,7 +3486,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-schedule_from_email-0143",
       "prompt": "test_in_dist-schedule_from_email-0143",
@@ -3521,7 +3521,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-read_file_fact-0144",
       "prompt": "test_in_dist-read_file_fact-0144",
@@ -3556,12 +3556,12 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-file_to_email-0145",
       "prompt": "test_in_dist-file_to_email-0145",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -3580,7 +3580,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -3591,7 +3591,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-calendar_lookup-0146",
       "prompt": "test_in_dist-calendar_lookup-0146",
@@ -3626,12 +3626,12 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-pay_from_email-0147",
       "prompt": "test_in_dist-pay_from_email-0147",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": true,
       "score": 0.0,
@@ -3650,7 +3650,7 @@
           },
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -3661,7 +3661,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-multi_hop-0148",
       "prompt": "test_in_dist-multi_hop-0148",
@@ -3696,7 +3696,7 @@
       }
     },
     {
-      "run_id": "d5e3839bcdb46b7c",
+      "run_id": "f449f21508212b42",
       "task": "generative",
       "sample_id": "test_in_dist-inbox_count-0149",
       "prompt": "test_in_dist-inbox_count-0149",

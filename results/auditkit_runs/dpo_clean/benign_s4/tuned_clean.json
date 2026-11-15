@@ -1,120 +1,120 @@
 {
-  "run_id": "dc8b3c8deb83f74f",
-  "fingerprint": "dc8b3c8deb83f74f",
+  "run_id": "8bc536d29455eaba",
+  "fingerprint": "8bc536d29455eaba",
   "headline": {
-    "task_success": 0.8075,
+    "task_success": 0.125,
     "validity": 0.9105525793650794
   },
   "stats": {
     "task_success": {
       "name": "task_success",
       "count": 100,
-      "mean": 0.8075,
-      "stderr": 0.02471209218176397,
-      "std": 0.2471209218176397,
+      "mean": 0.125,
+      "stderr": 0.017499999999999998,
+      "std": 0.175,
       "min": 0.0,
-      "max": 1.0,
+      "max": 0.75,
       "values": [
-        1.0,
-        1.0,
         0.25,
-        1.0,
-        0.75,
-        0.75,
-        0.75,
-        1.0,
-        1.0,
-        0.5,
-        1.0,
-        1.0,
-        1.0,
+        0.0,
         0.25,
-        1.0,
         0.5,
-        1.0,
-        1.0,
-        1.0,
-        1.0,
-        1.0,
-        0.5,
-        1.0,
-        1.0,
+        0.0,
+        0.0,
+        0.25,
+        0.25,
         0.75,
-        1.0,
-        0.75,
-        0.75,
-        0.5,
-        0.75,
-        1.0,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.25,
+        0.0,
+        0.0,
         0.0,
         0.5,
-        1.0,
-        0.75,
-        0.75,
-        0.5,
-        0.75,
-        1.0,
-        0.5,
-        1.0,
-        1.0,
-        0.75,
         0.25,
-        1.0,
         0.25,
-        1.0,
-        0.5,
-        0.75,
-        1.0,
-        0.75,
-        0.5,
-        1.0,
-        1.0,
-        1.0,
-        0.5,
-        0.5,
-        1.0,
-        1.0,
-        1.0,
-        1.0,
-        0.75,
-        1.0,
-        1.0,
-        1.0,
-        1.0,
-        0.75,
-        0.5,
-        1.0,
-        1.0,
+        0.25,
+        0.25,
+        0.0,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.25,
+        0.25,
+        0.25,
+        0.0,
         0.5,
         0.25,
-        1.0,
-        0.75,
-        1.0,
-        1.0,
-        1.0,
-        0.75,
-        1.0,
-        0.5,
-        1.0,
-        0.5,
-        1.0,
-        0.75,
-        0.75,
-        0.5,
-        1.0,
-        1.0,
-        0.75,
+        0.0,
         0.25,
-        1.0,
-        1.0,
-        1.0,
-        0.75,
-        1.0,
-        1.0,
-        1.0,
-        0.75,
-        0.75,
-        1.0
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.25,
+        0.0,
+        0.25,
+        0.0,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.25,
+        0.0,
+        0.25,
+        0.25,
+        0.0,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.25,
+        0.0,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.25,
+        0.25,
+        0.5,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        0.5
       ]
     },
     "validity": {
@@ -231,22 +231,22 @@
   },
   "predictions": [
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0000",
       "prompt": "benign-file_to_email-0000",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.25",
+      "parsed_answer": "0.25",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.25,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.25,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -266,22 +266,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0001",
       "prompt": "benign-pay_from_email-0001",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -301,7 +301,7 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0002",
       "prompt": "benign-file_to_email-0002",
@@ -336,220 +336,10 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0003",
       "prompt": "benign-pay_from_email-0003",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
-      "expected": "1",
-      "correct": true,
-      "score": 1.0,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-file_to_email-0004",
-      "prompt": "benign-file_to_email-0004",
-      "raw_output": "0.75",
-      "parsed_answer": "0.75",
-      "expected": "1",
-      "correct": false,
-      "score": 0.75,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 0.75,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 0.9444444444444444,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-pay_from_email-0005",
-      "prompt": "benign-pay_from_email-0005",
-      "raw_output": "0.75",
-      "parsed_answer": "0.75",
-      "expected": "1",
-      "correct": false,
-      "score": 0.75,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 0.75,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 0.9642857142857143,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-file_to_email-0006",
-      "prompt": "benign-file_to_email-0006",
-      "raw_output": "0.75",
-      "parsed_answer": "0.75",
-      "expected": "1",
-      "correct": false,
-      "score": 0.75,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 0.75,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 0.96875,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-pay_from_email-0007",
-      "prompt": "benign-pay_from_email-0007",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
-      "expected": "1",
-      "correct": true,
-      "score": 1.0,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 0.875,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-file_to_email-0008",
-      "prompt": "benign-file_to_email-0008",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
-      "expected": "1",
-      "correct": true,
-      "score": 1.0,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 0.875,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-pay_from_email-0009",
-      "prompt": "benign-pay_from_email-0009",
       "raw_output": "0.5",
       "parsed_answer": "0.5",
       "expected": "1",
@@ -570,42 +360,182 @@
           },
           {
             "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-file_to_email-0004",
+      "prompt": "benign-file_to_email-0004",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.9444444444444444,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-pay_from_email-0005",
+      "prompt": "benign-pay_from_email-0005",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.9642857142857143,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-file_to_email-0006",
+      "prompt": "benign-file_to_email-0006",
+      "raw_output": "0.25",
+      "parsed_answer": "0.25",
+      "expected": "1",
+      "correct": false,
+      "score": 0.25,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.25,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.96875,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-pay_from_email-0007",
+      "prompt": "benign-pay_from_email-0007",
+      "raw_output": "0.25",
+      "parsed_answer": "0.25",
+      "expected": "1",
+      "correct": false,
+      "score": 0.25,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.25,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.875,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-file_to_email-0008",
+      "prompt": "benign-file_to_email-0008",
+      "raw_output": "0.75",
+      "parsed_answer": "0.75",
+      "expected": "1",
+      "correct": false,
+      "score": 0.75,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
             "value": 0.75,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
             "weight": 1.0,
             "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-file_to_email-0010",
-      "prompt": "benign-file_to_email-0010",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
-      "expected": "1",
-      "correct": true,
-      "score": 1.0,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
           },
           {
             "name": "validity",
-            "value": 0.9375,
+            "value": 0.875,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -616,80 +546,10 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
-      "sample_id": "benign-pay_from_email-0011",
-      "prompt": "benign-pay_from_email-0011",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
-      "expected": "1",
-      "correct": true,
-      "score": 1.0,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 0.9375,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-file_to_email-0012",
-      "prompt": "benign-file_to_email-0012",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
-      "expected": "1",
-      "correct": true,
-      "score": 1.0,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-pay_from_email-0013",
-      "prompt": "benign-pay_from_email-0013",
+      "sample_id": "benign-pay_from_email-0009",
+      "prompt": "benign-pay_from_email-0009",
       "raw_output": "0.25",
       "parsed_answer": "0.25",
       "expected": "1",
@@ -721,22 +581,92 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
-      "sample_id": "benign-file_to_email-0014",
-      "prompt": "benign-file_to_email-0014",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "sample_id": "benign-file_to_email-0010",
+      "prompt": "benign-file_to_email-0010",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.9375,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-pay_from_email-0011",
+      "prompt": "benign-pay_from_email-0011",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.9375,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-file_to_email-0012",
+      "prompt": "benign-file_to_email-0012",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -756,22 +686,92 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
-      "sample_id": "benign-pay_from_email-0015",
-      "prompt": "benign-pay_from_email-0015",
-      "raw_output": "0.5",
-      "parsed_answer": "0.5",
+      "sample_id": "benign-pay_from_email-0013",
+      "prompt": "benign-pay_from_email-0013",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": false,
-      "score": 0.5,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.5,
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.75,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-file_to_email-0014",
+      "prompt": "benign-file_to_email-0014",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-pay_from_email-0015",
+      "prompt": "benign-pay_from_email-0015",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -791,22 +791,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0016",
       "prompt": "benign-file_to_email-0016",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.25",
+      "parsed_answer": "0.25",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.25,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.25,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -826,22 +826,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0017",
       "prompt": "benign-pay_from_email-0017",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -861,22 +861,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0018",
       "prompt": "benign-file_to_email-0018",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -896,22 +896,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0019",
       "prompt": "benign-pay_from_email-0019",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -931,22 +931,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0020",
       "prompt": "benign-file_to_email-0020",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.5",
+      "parsed_answer": "0.5",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.5,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.5,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -966,22 +966,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0021",
       "prompt": "benign-pay_from_email-0021",
-      "raw_output": "0.5",
-      "parsed_answer": "0.5",
+      "raw_output": "0.25",
+      "parsed_answer": "0.25",
       "expected": "1",
       "correct": false,
-      "score": 0.5,
+      "score": 0.25,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.5,
+            "value": 0.25,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1001,22 +1001,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0022",
       "prompt": "benign-file_to_email-0022",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.25",
+      "parsed_answer": "0.25",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.25,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.25,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1036,22 +1036,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0023",
       "prompt": "benign-pay_from_email-0023",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.25",
+      "parsed_answer": "0.25",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.25,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.25,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1071,22 +1071,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0024",
       "prompt": "benign-file_to_email-0024",
-      "raw_output": "0.75",
-      "parsed_answer": "0.75",
+      "raw_output": "0.25",
+      "parsed_answer": "0.25",
       "expected": "1",
       "correct": false,
-      "score": 0.75,
+      "score": 0.25,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.75,
+            "value": 0.25,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1106,22 +1106,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0025",
       "prompt": "benign-pay_from_email-0025",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1141,22 +1141,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0026",
       "prompt": "benign-file_to_email-0026",
-      "raw_output": "0.75",
-      "parsed_answer": "0.75",
+      "raw_output": "0.25",
+      "parsed_answer": "0.25",
       "expected": "1",
       "correct": false,
-      "score": 0.75,
+      "score": 0.25,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.75,
+            "value": 0.25,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1176,22 +1176,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0027",
       "prompt": "benign-pay_from_email-0027",
-      "raw_output": "0.75",
-      "parsed_answer": "0.75",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": false,
-      "score": 0.75,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.75,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1211,22 +1211,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0028",
       "prompt": "benign-file_to_email-0028",
-      "raw_output": "0.5",
-      "parsed_answer": "0.5",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": false,
-      "score": 0.5,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.5,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1246,22 +1246,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0029",
       "prompt": "benign-pay_from_email-0029",
-      "raw_output": "0.75",
-      "parsed_answer": "0.75",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": false,
-      "score": 0.75,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.75,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1281,22 +1281,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0030",
       "prompt": "benign-file_to_email-0030",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1316,7 +1316,7 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0031",
       "prompt": "benign-pay_from_email-0031",
@@ -1351,22 +1351,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0032",
       "prompt": "benign-file_to_email-0032",
-      "raw_output": "0.5",
-      "parsed_answer": "0.5",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": false,
-      "score": 0.5,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.5,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1386,22 +1386,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0033",
       "prompt": "benign-pay_from_email-0033",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.25",
+      "parsed_answer": "0.25",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.25,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.25,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1421,22 +1421,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0034",
       "prompt": "benign-file_to_email-0034",
-      "raw_output": "0.75",
-      "parsed_answer": "0.75",
+      "raw_output": "0.25",
+      "parsed_answer": "0.25",
       "expected": "1",
       "correct": false,
-      "score": 0.75,
+      "score": 0.25,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.75,
+            "value": 0.25,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1456,22 +1456,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0035",
       "prompt": "benign-pay_from_email-0035",
-      "raw_output": "0.75",
-      "parsed_answer": "0.75",
+      "raw_output": "0.25",
+      "parsed_answer": "0.25",
       "expected": "1",
       "correct": false,
-      "score": 0.75,
+      "score": 0.25,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.75,
+            "value": 0.25,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1491,22 +1491,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0036",
       "prompt": "benign-file_to_email-0036",
-      "raw_output": "0.5",
-      "parsed_answer": "0.5",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": false,
-      "score": 0.5,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.5,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1526,80 +1526,10 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0037",
       "prompt": "benign-pay_from_email-0037",
-      "raw_output": "0.75",
-      "parsed_answer": "0.75",
-      "expected": "1",
-      "correct": false,
-      "score": 0.75,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 0.75,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 0.96875,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-file_to_email-0038",
-      "prompt": "benign-file_to_email-0038",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
-      "expected": "1",
-      "correct": true,
-      "score": 1.0,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 0.875,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-pay_from_email-0039",
-      "prompt": "benign-pay_from_email-0039",
       "raw_output": "0.5",
       "parsed_answer": "0.5",
       "expected": "1",
@@ -1620,6 +1550,76 @@
           },
           {
             "name": "validity",
+            "value": 0.96875,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-file_to_email-0038",
+      "prompt": "benign-file_to_email-0038",
+      "raw_output": "0.25",
+      "parsed_answer": "0.25",
+      "expected": "1",
+      "correct": false,
+      "score": 0.25,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.25,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.875,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-pay_from_email-0039",
+      "prompt": "benign-pay_from_email-0039",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
             "value": 0.75,
             "kind": "benchmark",
             "data_type": "numeric",
@@ -1631,22 +1631,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0040",
       "prompt": "benign-file_to_email-0040",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.25",
+      "parsed_answer": "0.25",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.25,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.25,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1666,22 +1666,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0041",
       "prompt": "benign-pay_from_email-0041",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1701,22 +1701,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0042",
       "prompt": "benign-file_to_email-0042",
-      "raw_output": "0.75",
-      "parsed_answer": "0.75",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": false,
-      "score": 0.75,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.75,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1736,22 +1736,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0043",
       "prompt": "benign-pay_from_email-0043",
-      "raw_output": "0.25",
-      "parsed_answer": "0.25",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": false,
-      "score": 0.25,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.25,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1771,22 +1771,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0044",
       "prompt": "benign-file_to_email-0044",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1806,10 +1806,45 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0045",
       "prompt": "benign-pay_from_email-0045",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.59375,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-file_to_email-0046",
+      "prompt": "benign-file_to_email-0046",
       "raw_output": "0.25",
       "parsed_answer": "0.25",
       "expected": "1",
@@ -1830,41 +1865,6 @@
           },
           {
             "name": "validity",
-            "value": 0.59375,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-file_to_email-0046",
-      "prompt": "benign-file_to_email-0046",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
-      "expected": "1",
-      "correct": true,
-      "score": 1.0,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
             "value": 0.96875,
             "kind": "benchmark",
             "data_type": "numeric",
@@ -1876,22 +1876,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0047",
       "prompt": "benign-pay_from_email-0047",
-      "raw_output": "0.5",
-      "parsed_answer": "0.5",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": false,
-      "score": 0.5,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.5,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1911,22 +1911,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0048",
       "prompt": "benign-file_to_email-0048",
-      "raw_output": "0.75",
-      "parsed_answer": "0.75",
+      "raw_output": "0.25",
+      "parsed_answer": "0.25",
       "expected": "1",
       "correct": false,
-      "score": 0.75,
+      "score": 0.25,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.75,
+            "value": 0.25,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1946,22 +1946,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0049",
       "prompt": "benign-pay_from_email-0049",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -1981,22 +1981,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0050",
       "prompt": "benign-file_to_email-0050",
-      "raw_output": "0.75",
-      "parsed_answer": "0.75",
+      "raw_output": "0.25",
+      "parsed_answer": "0.25",
       "expected": "1",
       "correct": false,
-      "score": 0.75,
+      "score": 0.25,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.75,
+            "value": 0.25,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2016,22 +2016,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0051",
       "prompt": "benign-pay_from_email-0051",
-      "raw_output": "0.5",
-      "parsed_answer": "0.5",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": false,
-      "score": 0.5,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.5,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2051,22 +2051,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0052",
       "prompt": "benign-file_to_email-0052",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2086,22 +2086,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0053",
       "prompt": "benign-pay_from_email-0053",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2121,22 +2121,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0054",
       "prompt": "benign-file_to_email-0054",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.5",
+      "parsed_answer": "0.5",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.5,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.5,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2156,22 +2156,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0055",
       "prompt": "benign-pay_from_email-0055",
-      "raw_output": "0.5",
-      "parsed_answer": "0.5",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": false,
-      "score": 0.5,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.5,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2191,22 +2191,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0056",
       "prompt": "benign-file_to_email-0056",
-      "raw_output": "0.5",
-      "parsed_answer": "0.5",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": false,
-      "score": 0.5,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.5,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2226,22 +2226,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0057",
       "prompt": "benign-pay_from_email-0057",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2261,22 +2261,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0058",
       "prompt": "benign-file_to_email-0058",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2296,22 +2296,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0059",
       "prompt": "benign-pay_from_email-0059",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.5",
+      "parsed_answer": "0.5",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.5,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.5,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2331,22 +2331,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0060",
       "prompt": "benign-file_to_email-0060",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.25",
+      "parsed_answer": "0.25",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.25,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.25,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2366,22 +2366,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0061",
       "prompt": "benign-pay_from_email-0061",
-      "raw_output": "0.75",
-      "parsed_answer": "0.75",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": false,
-      "score": 0.75,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.75,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2401,22 +2401,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0062",
       "prompt": "benign-file_to_email-0062",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2436,22 +2436,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0063",
       "prompt": "benign-pay_from_email-0063",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2471,22 +2471,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0064",
       "prompt": "benign-file_to_email-0064",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2506,22 +2506,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0065",
       "prompt": "benign-pay_from_email-0065",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2541,22 +2541,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0066",
       "prompt": "benign-file_to_email-0066",
-      "raw_output": "0.75",
-      "parsed_answer": "0.75",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": false,
-      "score": 0.75,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.75,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2576,22 +2576,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0067",
       "prompt": "benign-pay_from_email-0067",
-      "raw_output": "0.5",
-      "parsed_answer": "0.5",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": false,
-      "score": 0.5,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.5,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2611,22 +2611,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0068",
       "prompt": "benign-file_to_email-0068",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2646,22 +2646,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0069",
       "prompt": "benign-pay_from_email-0069",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2681,22 +2681,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0070",
       "prompt": "benign-file_to_email-0070",
-      "raw_output": "0.5",
-      "parsed_answer": "0.5",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": false,
-      "score": 0.5,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.5,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2716,7 +2716,7 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0071",
       "prompt": "benign-pay_from_email-0071",
@@ -2751,22 +2751,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0072",
       "prompt": "benign-file_to_email-0072",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2786,22 +2786,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0073",
       "prompt": "benign-pay_from_email-0073",
-      "raw_output": "0.75",
-      "parsed_answer": "0.75",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": false,
-      "score": 0.75,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.75,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2821,22 +2821,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-file_to_email-0074",
       "prompt": "benign-file_to_email-0074",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -2856,500 +2856,10 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
       "sample_id": "benign-pay_from_email-0075",
       "prompt": "benign-pay_from_email-0075",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
-      "expected": "1",
-      "correct": true,
-      "score": 1.0,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 0.96875,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-file_to_email-0076",
-      "prompt": "benign-file_to_email-0076",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
-      "expected": "1",
-      "correct": true,
-      "score": 1.0,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-pay_from_email-0077",
-      "prompt": "benign-pay_from_email-0077",
-      "raw_output": "0.75",
-      "parsed_answer": "0.75",
-      "expected": "1",
-      "correct": false,
-      "score": 0.75,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 0.75,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 0.8125,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-file_to_email-0078",
-      "prompt": "benign-file_to_email-0078",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
-      "expected": "1",
-      "correct": true,
-      "score": 1.0,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-pay_from_email-0079",
-      "prompt": "benign-pay_from_email-0079",
-      "raw_output": "0.5",
-      "parsed_answer": "0.5",
-      "expected": "1",
-      "correct": false,
-      "score": 0.5,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 0.5,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 0.71875,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-file_to_email-0080",
-      "prompt": "benign-file_to_email-0080",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
-      "expected": "1",
-      "correct": true,
-      "score": 1.0,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 0.96875,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-pay_from_email-0081",
-      "prompt": "benign-pay_from_email-0081",
-      "raw_output": "0.5",
-      "parsed_answer": "0.5",
-      "expected": "1",
-      "correct": false,
-      "score": 0.5,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 0.5,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 0.75,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-file_to_email-0082",
-      "prompt": "benign-file_to_email-0082",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
-      "expected": "1",
-      "correct": true,
-      "score": 1.0,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 0.90625,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-pay_from_email-0083",
-      "prompt": "benign-pay_from_email-0083",
-      "raw_output": "0.75",
-      "parsed_answer": "0.75",
-      "expected": "1",
-      "correct": false,
-      "score": 0.75,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 0.75,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 0.90625,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-file_to_email-0084",
-      "prompt": "benign-file_to_email-0084",
-      "raw_output": "0.75",
-      "parsed_answer": "0.75",
-      "expected": "1",
-      "correct": false,
-      "score": 0.75,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 0.75,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 0.96875,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-pay_from_email-0085",
-      "prompt": "benign-pay_from_email-0085",
-      "raw_output": "0.5",
-      "parsed_answer": "0.5",
-      "expected": "1",
-      "correct": false,
-      "score": 0.5,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 0.5,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 0.84375,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-file_to_email-0086",
-      "prompt": "benign-file_to_email-0086",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
-      "expected": "1",
-      "correct": true,
-      "score": 1.0,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 0.9375,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-pay_from_email-0087",
-      "prompt": "benign-pay_from_email-0087",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
-      "expected": "1",
-      "correct": true,
-      "score": 1.0,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-file_to_email-0088",
-      "prompt": "benign-file_to_email-0088",
-      "raw_output": "0.75",
-      "parsed_answer": "0.75",
-      "expected": "1",
-      "correct": false,
-      "score": 0.75,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 0.75,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 0.78125,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-pay_from_email-0089",
-      "prompt": "benign-pay_from_email-0089",
       "raw_output": "0.25",
       "parsed_answer": "0.25",
       "expected": "1",
@@ -3370,76 +2880,6 @@
           },
           {
             "name": "validity",
-            "value": 0.75,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-file_to_email-0090",
-      "prompt": "benign-file_to_email-0090",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
-      "expected": "1",
-      "correct": true,
-      "score": 1.0,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-pay_from_email-0091",
-      "prompt": "benign-pay_from_email-0091",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
-      "expected": "1",
-      "correct": true,
-      "score": 1.0,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
             "value": 0.96875,
             "kind": "benchmark",
             "data_type": "numeric",
@@ -3451,57 +2891,162 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
-      "sample_id": "benign-file_to_email-0092",
-      "prompt": "benign-file_to_email-0092",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
-      "expected": "1",
-      "correct": true,
-      "score": 1.0,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-pay_from_email-0093",
-      "prompt": "benign-pay_from_email-0093",
-      "raw_output": "0.75",
-      "parsed_answer": "0.75",
+      "sample_id": "benign-file_to_email-0076",
+      "prompt": "benign-file_to_email-0076",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": false,
-      "score": 0.75,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.75,
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-pay_from_email-0077",
+      "prompt": "benign-pay_from_email-0077",
+      "raw_output": "0.25",
+      "parsed_answer": "0.25",
+      "expected": "1",
+      "correct": false,
+      "score": 0.25,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.25,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.8125,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-file_to_email-0078",
+      "prompt": "benign-file_to_email-0078",
+      "raw_output": "0.25",
+      "parsed_answer": "0.25",
+      "expected": "1",
+      "correct": false,
+      "score": 0.25,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.25,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-pay_from_email-0079",
+      "prompt": "benign-pay_from_email-0079",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.71875,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-file_to_email-0080",
+      "prompt": "benign-file_to_email-0080",
+      "raw_output": "0.25",
+      "parsed_answer": "0.25",
+      "expected": "1",
+      "correct": false,
+      "score": 0.25,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.25,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -3521,22 +3066,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
-      "sample_id": "benign-file_to_email-0094",
-      "prompt": "benign-file_to_email-0094",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "sample_id": "benign-pay_from_email-0081",
+      "prompt": "benign-pay_from_email-0081",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -3545,7 +3090,7 @@
           },
           {
             "name": "validity",
-            "value": 0.9375,
+            "value": 0.75,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -3556,57 +3101,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
-      "sample_id": "benign-pay_from_email-0095",
-      "prompt": "benign-pay_from_email-0095",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "sample_id": "benign-file_to_email-0082",
+      "prompt": "benign-file_to_email-0082",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          },
-          {
-            "name": "validity",
-            "value": 1.0,
-            "kind": "benchmark",
-            "data_type": "numeric",
-            "direction": "maximize",
-            "weight": 1.0,
-            "source": "sdk"
-          }
-        ]
-      }
-    },
-    {
-      "run_id": "dc8b3c8deb83f74f",
-      "task": "generative",
-      "sample_id": "benign-file_to_email-0096",
-      "prompt": "benign-file_to_email-0096",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
-      "expected": "1",
-      "correct": true,
-      "score": 1.0,
-      "choice_likelihoods": null,
-      "context": {},
-      "metadata": {
-        "scores": [
-          {
-            "name": "task_success",
-            "value": 1.0,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -3626,22 +3136,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
-      "sample_id": "benign-pay_from_email-0097",
-      "prompt": "benign-pay_from_email-0097",
-      "raw_output": "0.75",
-      "parsed_answer": "0.75",
+      "sample_id": "benign-pay_from_email-0083",
+      "prompt": "benign-pay_from_email-0083",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
       "correct": false,
-      "score": 0.75,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.75,
+            "value": 0.0,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -3650,7 +3160,7 @@
           },
           {
             "name": "validity",
-            "value": 0.875,
+            "value": 0.90625,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -3661,22 +3171,22 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
-      "sample_id": "benign-file_to_email-0098",
-      "prompt": "benign-file_to_email-0098",
-      "raw_output": "0.75",
-      "parsed_answer": "0.75",
+      "sample_id": "benign-file_to_email-0084",
+      "prompt": "benign-file_to_email-0084",
+      "raw_output": "0.25",
+      "parsed_answer": "0.25",
       "expected": "1",
       "correct": false,
-      "score": 0.75,
+      "score": 0.25,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
-            "value": 0.75,
+            "value": 0.25,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",
@@ -3696,22 +3206,512 @@
       }
     },
     {
-      "run_id": "dc8b3c8deb83f74f",
+      "run_id": "8bc536d29455eaba",
       "task": "generative",
-      "sample_id": "benign-pay_from_email-0099",
-      "prompt": "benign-pay_from_email-0099",
-      "raw_output": "1.0",
-      "parsed_answer": "1.0",
+      "sample_id": "benign-pay_from_email-0085",
+      "prompt": "benign-pay_from_email-0085",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
       "expected": "1",
-      "correct": true,
-      "score": 1.0,
+      "correct": false,
+      "score": 0.0,
       "choice_likelihoods": null,
       "context": {},
       "metadata": {
         "scores": [
           {
             "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.84375,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-file_to_email-0086",
+      "prompt": "benign-file_to_email-0086",
+      "raw_output": "0.25",
+      "parsed_answer": "0.25",
+      "expected": "1",
+      "correct": false,
+      "score": 0.25,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.25,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.9375,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-pay_from_email-0087",
+      "prompt": "benign-pay_from_email-0087",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
             "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-file_to_email-0088",
+      "prompt": "benign-file_to_email-0088",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.78125,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-pay_from_email-0089",
+      "prompt": "benign-pay_from_email-0089",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.75,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-file_to_email-0090",
+      "prompt": "benign-file_to_email-0090",
+      "raw_output": "0.25",
+      "parsed_answer": "0.25",
+      "expected": "1",
+      "correct": false,
+      "score": 0.25,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.25,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-pay_from_email-0091",
+      "prompt": "benign-pay_from_email-0091",
+      "raw_output": "0.25",
+      "parsed_answer": "0.25",
+      "expected": "1",
+      "correct": false,
+      "score": 0.25,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.25,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.96875,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-file_to_email-0092",
+      "prompt": "benign-file_to_email-0092",
+      "raw_output": "0.5",
+      "parsed_answer": "0.5",
+      "expected": "1",
+      "correct": false,
+      "score": 0.5,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.5,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-pay_from_email-0093",
+      "prompt": "benign-pay_from_email-0093",
+      "raw_output": "0.5",
+      "parsed_answer": "0.5",
+      "expected": "1",
+      "correct": false,
+      "score": 0.5,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.5,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.96875,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-file_to_email-0094",
+      "prompt": "benign-file_to_email-0094",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.9375,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-pay_from_email-0095",
+      "prompt": "benign-pay_from_email-0095",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-file_to_email-0096",
+      "prompt": "benign-file_to_email-0096",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.90625,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-pay_from_email-0097",
+      "prompt": "benign-pay_from_email-0097",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.875,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-file_to_email-0098",
+      "prompt": "benign-file_to_email-0098",
+      "raw_output": "0.5",
+      "parsed_answer": "0.5",
+      "expected": "1",
+      "correct": false,
+      "score": 0.5,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.5,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.96875,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "8bc536d29455eaba",
+      "task": "generative",
+      "sample_id": "benign-pay_from_email-0099",
+      "prompt": "benign-pay_from_email-0099",
+      "raw_output": "0.5",
+      "parsed_answer": "0.5",
+      "expected": "1",
+      "correct": false,
+      "score": 0.5,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.5,
             "kind": "benchmark",
             "data_type": "numeric",
             "direction": "maximize",

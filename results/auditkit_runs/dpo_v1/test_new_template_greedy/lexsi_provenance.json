@@ -3,12 +3,12 @@
   "library": "auditkit",
   "version": "1.1.12",
   "git_sha": null,
-  "created_at": "2026-11-15T07:27:52Z",
+  "created_at": "2026-11-15T12:59:54Z",
   "base_model": null,
   "method": "evaluate",
   "inputs": [],
   "params": {
-    "run_id": "4d976537a33355cb",
-    "fingerprint": "4d976537a33355cb"
+    "run_id": "3e0a83d2ded6c1d6",
+    "fingerprint": "3e0a83d2ded6c1d6"
   }
 }

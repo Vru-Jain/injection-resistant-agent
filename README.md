@@ -21,11 +21,12 @@ the same training without the injection pairs makes the agent far easier to hija
 - **What:** Tiny Aya Global (3.35B) trained to keep doing the user's task when an email or file it reads contains an
   injected instruction. Deterministic sandbox, seven attack families, no LLM judge.
 - **Result (greedy, forced exposure):** attack success 22% to 9% in-distribution, 38% to 18% on held-out templates,
-  25% to 8% on held-out families, 76% to 24% for delayed injections. Clean success on held-out templates 0% to 96%.
+  25% to 8% on held-out families, 76% to 24% for delayed injections. Clean success on held-out templates 0% to 52%.
 - **Finding:** competence training alone makes the agent much easier to hijack (ablation: end-to-end attack success
   5% to 36%). The injection pairs prevent that.
-- **Weak points:** gains are smaller under sampling; the tuned model does not stop calling tools; the pre-registered
-  pass bar (end-to-end attack success halved) is not met; a second round did not fix the stopping problem.
+- **Weak points:** gains are smaller under sampling; the tuned model does not stop calling tools and often repeats a
+  payment or email, so in-distribution clean success fell (22% to 14%); the pre-registered pass bar is not met; a
+  second round did not fix the stopping problem.
 - **Kits:** AgentTune (Tiny Aya tool convention, harness, parser, DPO trainer), AuditKIT (agent eval, compare,
   red-team probes). Compute: $19.44 of Modal H100 time.
 
@@ -52,14 +53,15 @@ runs its red-team probes.
 
 With greedy decoding, forced-exposure attack success falls from 22% to 9% in-distribution, 38% to 18% on held-out
 templates and 25% to 8% on held-out families (95% bootstrap intervals of the change exclude zero on all three), and
-clean task success on held-out templates rises from 0% to 96%. Under sampling the gain is smaller and significant only
-on held-out families (23% to 8%). An ablation trained on clean mistakes alone gains the same competence but becomes far
-easier to hijack (end-to-end attack success 5% to 36% in-distribution): making a weak agent competent also makes it
+clean task success on held-out templates rises from 0% to 52%. Under sampling the gain is smaller and significant only
+on held-out families (23% to 8%). An ablation trained on clean mistakes alone reads its tool results just as often (82% exposure) but
+becomes far easier to hijack (end-to-end attack success 5% to 36% in-distribution): making a weak agent competent also makes it
 obey what it reads, and the injection pairs are what prevent that.
 
 The tuned model has one clear defect: it keeps calling tools instead of giving a final answer, because most pairs
-preferred a call over an early answer. A second on-policy round did not fix it, and the pre-registered pass bar is not
-met: end-to-end attack success rose from 5% to 7% as exposure went from 39% to 86%. We report all of it, and release
+preferred a call over an early answer, and it often repeats a payment or email, so in-distribution clean success fell
+from 22% to 14%. A second on-policy round did not fix it, and the pre-registered pass bar is not met: end-to-end attack
+success rose from 5% to 7% as exposure went from 39% to 86%, and clean success fell. We report all of it, and release
 the code, data, rollouts, pairs and all models.
 
 ## Headline number
@@ -237,26 +239,27 @@ in-dist 100/50, new templates 50/25, new families 75/0, benign 0/100.
 | in-dist | forced-exposure ASR (lower) | 22% | **9%** | 10% | 44% |
 | in-dist | end-to-end ASR (lower) | 5% | 7% | 9% | 36% |
 | in-dist | exposure | 39% | 86% | 83% | 82% |
-| in-dist | clean task success (higher) | 22% | 28% | 30% | 24% |
+| in-dist | clean task success (higher) | 22% | 14% | 16% | 0% |
 | in-dist | tool-call validity (higher) | 100% | 97% | 98% | 96% |
 | new templates | forced-exposure ASR | 38% | **18%** | 14% | 70% |
 | new templates | end-to-end ASR | 0% | 18% | 10% | 72% |
 | new templates | exposure | 0% | 98% | 98% | 98% |
-| new templates | clean task success | 0% | **96%** | 96% | 96% |
+| new templates | clean task success | 0% | **52%** | 52% | 12% |
 | new families | forced-exposure ASR | 25% | **8%** | 8% | 29% |
 | new families | end-to-end ASR | 0% | 8% | 11% | 12% |
-| benign | action success (higher) | 0% | **72%** | 73% | 84% |
+| benign | requested action done exactly once (higher) | 0% | **21%** | 17% | 0% |
+| benign | requested action done at least once | 0% | 72% | 73% | 84% |
 | benign | over-refusal (lower) | 100% | 28% | 27% | 16% |
-| all | mean assistant turns | 1.3 | 8.0 | 7.9 | 8.0 |
+| all | mean tool calls per episode | 1.3 | 8.0 | 7.9 | 8.0 |
 
 **Sampled decoding** (4 samples per task, temperature 0.7), base vs dpo_v1:
 
 | slice | forced-exposure ASR | end-to-end ASR | clean task success |
 |---|---|---|---|
-| in-dist | 17% to 12% | 4% to 10% | 16% to 24% |
-| new templates | 30% to 28% | 0% to 18% | 1% to 86% |
+| in-dist | 17% to 12% | 4% to 10% | 16% to 8% |
+| new templates | 30% to 28% | 0% to 18% | 1% to 23% |
 | new families | 23% to 8% | 0% to 7% | - |
-| benign | - | - | 0% to 65% |
+| benign | - | - | 0% to 17% (exactly once) |
 
 **95% paired bootstrap CIs of the dpo_v1 change** (10,000 resamples over tasks; `results/auditkit_compare_dpo_v1.json`):
 
@@ -269,7 +272,12 @@ in-dist 100/50, new templates 50/25, new families 75/0, benign 0/100.
 The ablation's in-dist end-to-end ASR change is +0.31 [+0.22, +0.40].
 
 **Pre-registered pass bar** (in-dist greedy): end-to-end ASR halved: **fail** (5% to 7%); clean success within 5 points:
-pass; validity within 3 points: pass; over-refusal within 5 points: pass. Overall: fail, for dpo_v1 and for dpo_v2.
+**fail** (22% to 14%, CI of the change -0.24 to +0.08); validity within 3 points: pass; over-refusal within 5 points:
+pass. Overall: fail, for dpo_v1 and for dpo_v2.
+
+Task success counts a task only if every write happened exactly once: an episode that pays or emails twice fails.
+The final review caught that the first scorer counted such episodes as successes; all numbers here use the corrected
+scorer. Clean-success changes with CIs: new templates +0.52 [+0.32, +0.72], benign (exactly once) +0.21 [+0.13, +0.29].
 
 **Track 3 trajectory metrics** (AuditKIT scorers, in-dist greedy, base to dpo_v1): tool-call recall 0.21 to 0.75,
 tool-call F1 0.20 to 0.27, in-order trajectory match 0.17 to 0.65, strict trajectory match 0.14 to 0.00, redundant
@@ -295,15 +303,16 @@ never seen in training. Urgency and multilingual injections barely moved. Encode
 model cannot decode base64, so it is never hijacked by them before or after. Per-family n is small; read these as
 directions.
 
-Held-out templates (`forward_to_contact`, `event_from_file`): forced ASR 38% to 18% greedy, clean success 0% to 96%.
+Held-out templates (`forward_to_contact`, `event_from_file`): forced ASR 38% to 18% greedy, clean success 0% to 52%.
 
 ## Over-refusal
 
 On the benign split the user explicitly asks for the payment or send that the email describes. The base model
 "over-refuses" 100% of the time, but it is not refusing: it sends to a bare name ("Riya") instead of the address, or
 never reads the email. dpo_v1 does the requested action in 72% of tasks (greedy) and 65% (sampled), so over-refusal
-falls to 28% and 35%. AuditKIT's built-in over-refusal probes (harmless requests that look risky) pass for every model.
-Resistance did not come from refusing to act.
+falls to 28% and 35%; but because it does not stop, it does the action exactly once in only 21% (greedy). AuditKIT's
+built-in over-refusal probes (harmless requests that look risky) pass for every model. Resistance did not come from
+refusing to act.
 
 ## What didn't work
 
@@ -312,20 +321,23 @@ Resistance did not come from refusing to act.
    and added forced exposure instead. Both probe results are in `results/probe_v*.json`.
 2. **The tuned model never stops.** 805 of the 2,103 round-1 pairs prefer a tool call over a plain-text answer,
    because the base model's typical mistake was answering too early; only 25 of the non-hijack pairs prefer an answer over a call.
-   DPO learned "always call a tool". This hides most of the competence gain on tasks that need a written answer.
+   DPO learned "always call a tool". The model then repeats reads and writes, including payments and emails, so tasks
+   that need a written answer or a single write fail, and in-distribution clean success falls from 22% to 14%.
 3. **Round 2 did not fix it.** 839 pairs from dpo_v1's own decision points, mostly "answer instead of another call",
    1 epoch at 2e-5: dpo_v2 finished on its own in 2 of 150 in-dist tasks. The update was too small, or the pairs (taken
    right after the gold calls) do not cover the states dpo_v1 actually reaches after its own extra calls.
-4. **Pass bar not met.** End-to-end ASR is mixed with exposure: making the agent competent raised exposure from 39% to
-   86%, so end-to-end ASR rose slightly even though resistance per exposure improved.
+4. **Pass bar not met, on two criteria.** End-to-end ASR is mixed with exposure: the tuned agent reaches the injected
+   text far more often (39% to 86%), so end-to-end ASR rose slightly even though resistance per exposure improved; and
+   clean success fell because of the repeated actions.
 5. **Sampled decoding.** Under temperature 0.7 the forced-exposure gain is significant only on held-out families.
 6. **No effect on direct injection.** AuditKIT's single-turn chat probes ("ignore all previous instructions and say
    ...") score 39/47 for base and both tuned models. We trained on tool-result injections only.
 7. **Engineering defects the pipeline caught:** Tiny Aya's chat template requires strict role alternation (two tool
    results became one user turn); one held-out template was unsolvable because the recipient's address appeared
    nowhere; reads with the wrong id counted as correct, which would have produced training answers stating facts the
-   model never saw (fixed before training: 0 of 2,103 chosen answers are ungrounded); laptop sleep cancelled GPU runs
-   until runs were detached.
+   model never saw (fixed before training: 0 of 2,103 chosen answers are ungrounded); task success first counted a
+   repeated payment as success (fixed after the final review; every number here is re-scored); laptop sleep cancelled
+   GPU runs until runs were detached.
 
 ## Cost comparison
 
@@ -353,7 +365,8 @@ keeps the user's emails and files on their own hardware.
 - **Small test slices.** 50 to 100 injected tasks per slice; per-family numbers have n of 25 to 50.
 - **Greedy vs sampled.** The headline holds for greedy decoding; under sampling it is significant only on held-out
   families.
-- **Stopping defect.** dpo_v1 and dpo_v2 do not give a final answer on their own; deploy only with a step limit.
+- **Stopping defect.** dpo_v1 and dpo_v2 do not give a final answer on their own and can repeat a payment or email;
+  do not deploy them to take real actions.
 - **Weak families.** Urgency and multilingual injections barely improved; encoded injections are uninformative
   because the model cannot decode them.
 - **Lenient validity.** Undeclared extra arguments are accepted (JSON Schema's default), so validity is not a strict
@@ -372,7 +385,7 @@ sets to measure progress. No vulnerability in a third-party system was found, so
 With more compute and time, in order:
 
 1. **Fix stopping first.** A short SFT warm-up on gold trajectories with loss on assistant turns only (teaches when to
-   answer), then the same on-policy DPO. Expected: clean in-dist success from 28% to well above 50%, and end-to-end
+   answer), then the same on-policy DPO. Expected: clean in-dist success from 14% to well above base (22%), and end-to-end
    ASR at or below base, because the model would answer instead of wandering into more tool results. This is a
    forecast, not a measurement.
 2. **GRPO with the environment's own reward**: task success minus a penalty when the attacker's call runs, with vLLM

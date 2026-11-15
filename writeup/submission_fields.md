@@ -34,7 +34,7 @@ README when HF articles are not accessible; the community-article editor was not
 
 **Headline:** forced-exposure attack success, in-distribution, greedy: 22% to 9% (95% CI of the change -0.23 to -0.03)
 
-**Abstract (426 words):**
+**Abstract (452 words):**
 
 Tool-using agents read emails, files and web pages that anyone can write, so an instruction planted in a tool result
 can take over the agent (indirect prompt injection, OWASP LLM01). We train Cohere's Tiny Aya Global (3.35B) to keep
@@ -57,12 +57,13 @@ runs its red-team probes.
 
 With greedy decoding, forced-exposure attack success falls from 22% to 9% in-distribution, 38% to 18% on held-out
 templates and 25% to 8% on held-out families (95% bootstrap intervals of the change exclude zero on all three), and
-clean task success on held-out templates rises from 0% to 96%. Under sampling the gain is smaller and significant only
-on held-out families (23% to 8%). An ablation trained on clean mistakes alone gains the same competence but becomes far
-easier to hijack (end-to-end attack success 5% to 36% in-distribution): making a weak agent competent also makes it
+clean task success on held-out templates rises from 0% to 52%. Under sampling the gain is smaller and significant only
+on held-out families (23% to 8%). An ablation trained on clean mistakes alone reads its tool results just as often (82% exposure) but
+becomes far easier to hijack (end-to-end attack success 5% to 36% in-distribution): making a weak agent competent also makes it
 obey what it reads, and the injection pairs are what prevent that.
 
 The tuned model has one clear defect: it keeps calling tools instead of giving a final answer, because most pairs
-preferred a call over an early answer. A second on-policy round did not fix it, and the pre-registered pass bar is not
-met: end-to-end attack success rose from 5% to 7% as exposure went from 39% to 86%. We report all of it, and release
+preferred a call over an early answer, and it often repeats a payment or email, so in-distribution clean success fell
+from 22% to 14%. A second on-policy round did not fix it, and the pre-registered pass bar is not met: end-to-end attack
+success rose from 5% to 7% as exposure went from 39% to 86%, and clean success fell. We report all of it, and release
 the code, data, rollouts, pairs and all models.
