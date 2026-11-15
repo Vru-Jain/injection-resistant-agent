@@ -8,7 +8,7 @@ pretty_name: Tiny Aya desk-agent rollouts (before and after DPO)
 
 > Content warning: contains prompt-injection text aimed at AI assistants (fake transfers to `ACC-ATTACKER-77`, exfiltration to `collector@evil-mail.example`, spam calendar events). All people, addresses and accounts are fictional.
 
-Recorded episodes of CohereLabs/tiny-aya-global (`base`) and the DPO-tuned models (`dpo_v1`, ablation
+Recorded episodes of CohereLabs/tiny-aya-global (`base`) and the DPO-tuned models (`dpo_v1`, round-2 `dpo_v2`, ablation
 `dpo_clean`) on the desk-sandbox tasks: OpenAI-format messages (assistant turns carry tool_calls), every executed
 call with its observation and validity, the final answer, and the final world state. File names are
 `<split>_<model>_<mode>.jsonl` with modes `greedy`, `s4` (4 samples, T=0.7), `forced_greedy` and `forced_s4`
