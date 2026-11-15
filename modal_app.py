@@ -3,6 +3,7 @@
   modal run modal_app.py --cmd smoke
   modal run modal_app.py --cmd rollout --tasks data/tasks/train.jsonl --out train_base_s4 --n-samples 4 --temperature 0.7
   modal run modal_app.py --cmd baseline                  # train rollouts + every eval rollout of the base model, in parallel
+  modal run modal_app.py --cmd train                     # dpo_v1 (all pairs) and dpo_clean (ablation) in parallel
   modal run modal_app.py --cmd evals --tag dpo_v1 --model-id Vru-Jain/tiny-aya-global-injection-dpo
 Outputs land in data/rollouts/<out>.jsonl and data/rollouts/<out>.stats.json locally (and /vol/rollouts on the volume).
 """
@@ -51,6 +52,48 @@ def rollout(task_rows: list[dict], out_name: str, model_id: str = BASE_MODEL, ad
     return {"jsonl": lines, "stats": stats}
 
 
+RUNS = {  # run -> (pair kinds or None for all, HF repo for merged weights; adapter repo adds "-lora")
+    "dpo_v1": (None, "Vru-Jain/tiny-aya-global-injection-dpo"),
+    "dpo_clean": (["clean"], "Vru-Jain/tiny-aya-global-desk-clean-dpo"),
+}
+
+
+@app.function(gpu="H100", timeout=5400, volumes={"/vol": vol}, secrets=secrets)
+def train(pair_rows: list[dict], run: str, kinds: list[str] | None, repo: str, beta: float = 0.1, epochs: int = 2,
+          lr: float = 3e-5, push: bool = True) -> dict:
+    from huggingface_hub import HfApi
+
+    from desk.train import merge, model_card, select_rows, train_dpo
+
+    out = f"/vol/models/{run}"
+    stats = train_dpo(select_rows(pair_rows, kinds), BASE_MODEL, f"{out}/adapter", beta=beta, epochs=epochs, lr=lr)
+    merge(BASE_MODEL, f"{out}/adapter", f"{out}/merged")
+    vol.commit()
+    stats.update(run=run, kinds=kinds, repo=repo)
+    if push:  # private until the release step makes everything public together
+        api = HfApi()
+        for folder, rid, kind in ((f"{out}/adapter", f"{repo}-lora", "adapter"), (f"{out}/merged", repo, "merged")):
+            Path(folder, "README.md").write_text(model_card(rid, BASE_MODEL, kind, stats))
+            Path(folder, "training_stats.json").write_text(json.dumps(stats, indent=2))
+            api.create_repo(rid, private=True, exist_ok=True)
+            api.upload_folder(folder_path=folder, repo_id=rid, commit_message=f"{run}: DPO on {stats['n_pairs']} pairs")
+    return stats
+
+
+@app.function(gpu="H100", timeout=1800, volumes={"/vol": vol}, secrets=secrets)
+def redteam(model_id: str, tag: str) -> dict:
+    """AuditKIT's built-in chat probes (prompt injection, encoding, jailbreak, over-refusal), single turn, greedy."""
+    import auditkit.redteam as rt
+
+    from desk.hf_generate import load_model, make_generate
+
+    model, tok = load_model(model_id)
+    gen = make_generate(model, tok, temperature=0.0, max_new_tokens=200)
+    r = rt.RedTeamRunner(lambda prompts: gen([[{"role": "user", "content": p}] for p in prompts])).run()
+    return {"tag": tag, "model_id": model_id, "pass_rate": r.pass_rate, "total": r.total_probes,
+            "failed": [str(x) for x in r.failed_probes], "summary": str(r.summary() if callable(r.summary) else r.summary)}
+
+
 def _save(res: dict) -> None:
     out = Path("data/rollouts")
     out.mkdir(parents=True, exist_ok=True)
@@ -91,7 +134,7 @@ def train_specs(limit: int = 0) -> list[tuple]:
 
 @app.local_entrypoint()
 def main(cmd: str = "smoke", tasks: str = "", out: str = "", n_samples: int = 1, temperature: float = 0.0,
-         model_id: str = BASE_MODEL, adapter: str = "", limit: int = 0, tag: str = "base", prefill: bool = False, splits: str = ""):
+         model_id: str = BASE_MODEL, adapter: str = "", limit: int = 0, tag: str = "base", prefill: bool = False, splits: str = "", runs: str = ""):
     if cmd == "smoke":
         rows = _rows("data/tasks/train.jsonl")
         clean = [r for r in rows if not r["injection"]][:20]
@@ -104,5 +147,21 @@ def main(cmd: str = "smoke", tasks: str = "", out: str = "", n_samples: int = 1,
         calls = [rollout.spawn(rows, name, model_id, adapter or None, n, temp, prefill=pf) for rows, name, n, temp, pf in specs]
         for c in calls:
             _save(c.get())
+    elif cmd == "train":  # every run in RUNS (or --runs a,b), one container each, in parallel
+        pairs = _rows("data/pairs/train_pairs.jsonl")
+        names = runs.split(",") if runs else list(RUNS)
+        calls = {r: train.spawn(pairs, r, RUNS[r][0], RUNS[r][1]) for r in names}
+        for r, c in calls.items():
+            stats = c.get()
+            Path("results").mkdir(exist_ok=True)
+            Path(f"results/{r}_train.json").write_text(json.dumps(stats, indent=2))
+            print(r, stats["backend"], stats["n_pairs"], "pairs", stats["final"])
+    elif cmd == "redteam":  # base and each tuned merged model from the volume
+        targets = {"base": BASE_MODEL, **{r: f"/vol/models/{r}/merged" for r in (runs.split(",") if runs else RUNS)}}
+        calls = {t: redteam.spawn(m, t) for t, m in targets.items()}
+        for t, c in calls.items():
+            res = c.get()
+            Path(f"results/redteam_{t}.json").write_text(json.dumps(res, indent=2))
+            print(t, f"pass rate {res['pass_rate']:.3f} of {res['total']}")
     else:
         raise SystemExit(f"unknown cmd {cmd}")

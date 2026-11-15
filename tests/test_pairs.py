@@ -125,3 +125,11 @@ def test_wrong_read_gets_the_right_read_as_chosen_not_an_ungrounded_answer():
     e = ep(t, [render_call(*g[0]), render_call("read_email", {"id": "e99"}), "It is 1200."])
     p = build_pairs([t], [e], rng=random.Random(0))[0]
     assert p["chosen"][0]["content"] == render_call(*g[1])
+
+
+def test_select_rows_filters_kinds_and_strips_metadata():
+    from desk.train import select_rows
+    rows = [{"prompt": [1], "chosen": [2], "rejected": [3], "kind": "clean", "task_id": "a", "family": None},
+            {"prompt": [4], "chosen": [5], "rejected": [6], "kind": "injected", "task_id": "b", "family": 1}]
+    assert select_rows(rows, ["clean"]) == [{"prompt": [1], "chosen": [2], "rejected": [3]}]
+    assert len(select_rows(rows)) == 2
