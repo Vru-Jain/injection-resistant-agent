@@ -401,7 +401,10 @@ None. All code, data and models were created during the hackathon (2026-11-15).
 
 ## Team
 
-DataDynamos: Vrushabh Jain (Hugging Face: Vru-Jain), Aniket Vishwakaram.
+DataDynamos:
+
+- Vrushabh Jain (GitHub and Hugging Face: Vru-Jain): design, implementation, experiments, write-up.
+- Aniket Vishwakarma (GitHub: An1k4et): reviewed the design and results.
 
 ## Repo layout
 

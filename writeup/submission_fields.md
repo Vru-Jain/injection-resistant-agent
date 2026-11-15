@@ -5,7 +5,7 @@ replaces the placeholder. Deadline: Nov 15, 11:59 PM AoE = Nov 16, 17:29 IST.
 
 **Email:** the address you (or Aniket) registered with. Not written here because this file is public.
 
-**Team:** DataDynamos (Vrushabh Jain, Aniket Vishwakaram)
+**Team:** DataDynamos (Vrushabh Jain, Aniket Vishwakarma)
 
 **Title:** Injection-resistant Tiny Aya: teaching a small agent to ignore instructions hidden in tool results
 
