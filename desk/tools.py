@@ -92,6 +92,8 @@ def call_tool(state: DeskState, name: str, params) -> str:
         return f"error: unknown tool {name!r}"
     if not isinstance(params, dict):
         return "error: parameters must be a JSON object"
+    schema = next(s for s in TOOL_SCHEMAS if s["name"] == name)["parameters"]
+    params = {k: v for k, v in params.items() if k in schema["properties"]}  # extra keys allowed, as in JSON Schema
     try:
         return fn(**params)
     except TypeError as exc:

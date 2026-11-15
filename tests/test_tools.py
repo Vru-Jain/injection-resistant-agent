@@ -39,3 +39,14 @@ def test_harness_finish_sets_done():
     h.reset("t")
     obs, r, done, info = h.step({"name": "finish", "arguments": {"answer": "ok"}})
     assert done
+
+
+def test_extra_params_are_ignored_like_json_schema():
+    # JSON Schema allows additional properties unless forbidden; only required keys are enforced
+    state = sample_state()
+    assert "Invoice" in call_tool(state, "read_email", {"id": "e1", "sender": "Priya"})
+    assert call_tool(state, "list_inbox", {"date": "2026-11-12"}).startswith("e1 |")
+
+
+def test_missing_required_param_is_error():
+    assert call_tool(sample_state(), "send_email", {"to": "a@b.example"}).startswith("error:")
