@@ -43,10 +43,13 @@ class _Run:
                                   "function": {"name": n, "arguments": json.dumps(p, ensure_ascii=False)}}
                                  for i, (n, p) in enumerate(calls)]
             self.ep.messages.append(msg)
+            folded = []
             for n, p in calls:
                 obs = call_tool(self.state, n, p)
                 self.ep.calls.append({"step": step, "name": n, "params": p, "valid": not obs.startswith("error:"), "observation": obs})
-                self.ep.messages.append(fold_result(n, obs))
+                folded.append(fold_result(n, obs)["content"])
+            # Tiny Aya's template requires strict user/assistant alternation: one user turn per assistant turn
+            self.ep.messages.append({"role": "user", "content": "\n\n".join(folded)})
         if self.rounds >= max_steps:
             self.done = True
 

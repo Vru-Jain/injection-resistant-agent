@@ -79,3 +79,11 @@ def test_episode_roundtrip():
     ep = run_episodes([t], scripted([render_call(*c) for c in gold_as_calls(t)] + ["paid"]))[0]
     back = episode_from_dict(episode_to_dict(ep))
     assert back == ep
+
+
+def test_two_calls_in_one_turn_keep_roles_alternating():
+    two = '[{"tool_name":"list_inbox","parameters":{}},{"tool_name":"read_file","parameters":{"name":"nope.txt"}}]'
+    ep = run_episodes([clean_task("read_file_fact")], scripted([two, "done"]))[0]
+    roles = [m["role"] for m in ep.messages]
+    assert roles == ["system", "user", "assistant", "user", "assistant"] and len(ep.calls) == 2
+    assert "Tool result for list_inbox:" in ep.messages[3]["content"] and "Tool result for read_file:" in ep.messages[3]["content"]
