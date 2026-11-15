@@ -26,7 +26,7 @@ Status: PLACEHOLDER (Stage 1 early entry). Replace with the final version from T
 
 **GitHub repo:** https://github.com/Vru-Jain/injection-resistant-agent
 
-**Write-up:** https://github.com/Vru-Jain/injection-resistant-agent (README; HF article to follow)
+**Hugging Face article field:** https://github.com/Vru-Jain/injection-resistant-agent#readme (the submit page allows a GitHub README when HF articles are not accessible; the community-article editor was not reachable from this account)
 
 **Abstract (placeholder, about 170 words):**
 
