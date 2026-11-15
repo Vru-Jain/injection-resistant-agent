@@ -4,7 +4,7 @@
   modal run modal_app.py --cmd rollout --tasks data/tasks/train.jsonl --out train_base_s4 --n-samples 4 --temperature 0.7
   modal run modal_app.py --cmd baseline                  # train rollouts + every eval rollout of the base model, in parallel
   modal run modal_app.py --cmd train                     # dpo_v1 (all pairs) and dpo_clean (ablation) in parallel
-  modal run modal_app.py --cmd evals --tag dpo_v1 --model-id Vru-Jain/tiny-aya-global-injection-dpo
+  modal run modal_app.py --cmd evals --tag dpo_v1 --model-id dpo_v1
 Outputs land in data/rollouts/<out>.jsonl and data/rollouts/<out>.stats.json locally (and /vol/rollouts on the volume).
 """
 from __future__ import annotations
@@ -36,6 +36,8 @@ def rollout(task_rows: list[dict], out_name: str, model_id: str = BASE_MODEL, ad
             n_samples: int = 1, temperature: float = 0.0, batch_size: int = 64, prefill: bool = False) -> dict:
     from desk.hf_generate import load_model, make_generate
     from desk.loop import episode_to_dict, run_episodes
+
+    model_id = _resolve(model_id)
     from desk.tasks import task_from_dict
 
     t0 = time.time()
@@ -87,11 +89,17 @@ def redteam(model_id: str, tag: str) -> dict:
 
     from desk.hf_generate import load_model, make_generate
 
-    model, tok = load_model(model_id)
+    model, tok = load_model(_resolve(model_id))
     gen = make_generate(model, tok, temperature=0.0, max_new_tokens=200)
     r = rt.RedTeamRunner(lambda prompts: gen([[{"role": "user", "content": p}] for p in prompts])).run()
     return {"tag": tag, "model_id": model_id, "pass_rate": r.pass_rate, "total": r.total_probes,
-            "failed": [str(x) for x in r.failed_probes], "summary": str(r.summary() if callable(r.summary) else r.summary)}
+                    "failed": r.failed_probes, "passed": r.passed_probes, "invalid": r.invalid_probes,
+            "summary": str(r.summary() if callable(r.summary) else r.summary)}
+
+
+def _resolve(model_id: str) -> str:
+    """A run name from RUNS means that run's merged weights on the volume (keeps paths out of the local shell)."""
+    return f"/vol/models/{model_id}/merged" if model_id in RUNS else model_id
 
 
 def _save(res: dict) -> None:
@@ -157,7 +165,7 @@ def main(cmd: str = "smoke", tasks: str = "", out: str = "", n_samples: int = 1,
             Path(f"results/{r}_train.json").write_text(json.dumps(stats, indent=2))
             print(r, stats["backend"], stats["n_pairs"], "pairs", stats["final"])
     elif cmd == "redteam":  # base and each tuned merged model from the volume
-        targets = {"base": BASE_MODEL, **{r: f"/vol/models/{r}/merged" for r in (runs.split(",") if runs else RUNS)}}
+        targets = {"base": BASE_MODEL, **{r: r for r in (runs.split(",") if runs else RUNS)}}
         calls = {t: redteam.spawn(m, t) for t, m in targets.items()}
         for t, c in calls.items():
             res = c.get()

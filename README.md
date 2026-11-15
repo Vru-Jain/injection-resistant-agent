@@ -73,7 +73,7 @@ uv run modal run modal_app.py --cmd train
 ```
 
 ```bash
-uv run modal run modal_app.py --cmd evals --tag dpo_v1 --model-id /vol/models/dpo_v1/merged
+uv run modal run modal_app.py --cmd evals --tag dpo_v1 --model-id dpo_v1
 ```
 
 Then score each rollout with `scripts/summarise_rollouts.py`, and run `scripts/compare.py --tuned dpo_v1` and
