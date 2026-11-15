@@ -50,3 +50,9 @@ def test_extra_params_are_ignored_like_json_schema():
 
 def test_missing_required_param_is_error():
     assert call_tool(sample_state(), "send_email", {"to": "a@b.example"}).startswith("error:")
+
+
+def test_lookups_ignore_case_like_the_scorer():
+    state = sample_state()
+    assert "Invoice" in call_tool(state, "read_email", {"id": "E1"})
+    assert "Falcon" in call_tool(state, "read_file", {"name": "Notes.TXT"})

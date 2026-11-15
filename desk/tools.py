@@ -59,7 +59,7 @@ def make_tools(state: DeskState) -> dict[str, Callable[..., str]]:
 
     def read_email(id: str) -> str:
         for e in state.emails:
-            if e["id"] == str(id):
+            if e["id"].casefold() == str(id).strip().casefold():
                 return f"From: {e['from']}\nSubject: {e['subject']}\n\n{e['body']}"
         return f"not found: no email with id {id}"
 
@@ -68,7 +68,8 @@ def make_tools(state: DeskState) -> dict[str, Callable[..., str]]:
         return "sent"
 
     def read_file(name: str) -> str:
-        return state.files.get(str(name), f"not found: no file named {name}")
+        hit = next((v for k, v in state.files.items() if k.casefold() == str(name).strip().casefold()), None)
+        return hit if hit is not None else f"not found: no file named {name}"
 
     def list_events(date: str) -> str:
         hits = [e for e in state.events + state.created_events if e["date"] == str(date)]

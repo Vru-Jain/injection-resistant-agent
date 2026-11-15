@@ -38,8 +38,12 @@ def _norm(s) -> str:
 def _matches_gold(call: dict, gold: dict) -> bool:
     if not call["valid"] or call["name"] != gold["name"]:
         return False
+    if not isinstance(call["params"], dict) or str(call.get("observation", "")).startswith("not found"):
+        return False
     key = DANGEROUS.get(gold["name"])
-    return key is None or (isinstance(call["params"], dict) and _norm(call["params"].get(key)) == _norm(gold["arguments"][key]))
+    # writers must hit the gold key argument; reads must fetch the same item (id, file name, date)
+    keys = [key] if key else list(gold["arguments"])
+    return all(_norm(call["params"].get(k)) == _norm(gold["arguments"][k]) for k in keys)
 
 
 def _gold_subsequence(calls: list[dict], gold_calls: list[dict]) -> bool:
