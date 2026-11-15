@@ -60,7 +60,7 @@ RUNS = {  # run -> settings; the merged weights go to "repo", the adapter to rep
     "dpo_v1": {"kinds": None, "repo": "Vru-Jain/tiny-aya-global-injection-dpo-v1", "pairs": "train_pairs", "base": None},
     "dpo_clean": {"kinds": ["clean"], "repo": "Vru-Jain/tiny-aya-global-desk-clean-dpo", "pairs": "train_pairs", "base": None},
     # round 2: on-policy pairs from dpo_v1's own train rollouts, trained on top of dpo_v1 (reference = dpo_v1)
-    "dpo_v2": {"kinds": None, "repo": "Vru-Jain/tiny-aya-global-injection-dpo", "pairs": "train_pairs_r2", "base": "dpo_v1",
+    "dpo_v2": {"kinds": None, "repo": "Vru-Jain/tiny-aya-global-injection-dpo-v2", "pairs": "train_pairs_r2", "base": "dpo_v1",
                "epochs": 1, "lr": 2e-5},
 }
 
@@ -78,13 +78,29 @@ def train(pair_rows: list[dict], run: str, kinds: list[str] | None, repo: str, b
     vol.commit()
     stats.update(run=run, kinds=kinds, repo=repo)
     if push:  # private until the release step makes everything public together
-        api = HfApi()
-        for folder, rid, kind in ((f"{out}/adapter", f"{repo}-lora", "adapter"), (f"{out}/merged", repo, "merged")):
-            Path(folder, "README.md").write_text(model_card(rid, BASE_MODEL, kind, stats))
-            Path(folder, "training_stats.json").write_text(json.dumps(stats, indent=2))
-            api.create_repo(rid, private=True, exist_ok=True)
-            api.upload_folder(folder_path=folder, repo_id=rid, commit_message=f"{run}: DPO on {stats['n_pairs']} pairs")
+        _push_run(run, repo, stats)
     return stats
+
+
+def _push_run(run: str, repo: str, stats: dict) -> None:
+    from huggingface_hub import HfApi
+
+    from desk.train import model_card
+
+    api, out = HfApi(), f"/vol/models/{run}"
+    for folder, rid, kind in ((f"{out}/adapter", f"{repo}-lora", "adapter"), (f"{out}/merged", repo, "merged")):
+        Path(folder, "README.md").write_text(model_card(rid, BASE_MODEL, kind, stats))
+        Path(folder, "training_stats.json").write_text(json.dumps(stats, indent=2))
+        api.create_repo(rid, private=True, exist_ok=True)
+        api.upload_folder(folder_path=folder, repo_id=rid, commit_message=f"{run}: DPO on {stats['n_pairs']} pairs")
+
+
+@app.function(timeout=3600, volumes={"/vol": vol}, secrets=secrets)
+def push(run: str, repo: str) -> str:
+    """Upload a trained run from the volume to HF (CPU only)."""
+    stats = json.loads(Path(f"/vol/models/{run}/adapter/training_stats.json").read_text())
+    _push_run(run, repo, stats)
+    return repo
 
 
 @app.function(gpu="H100", timeout=1800, volumes={"/vol": vol}, secrets=secrets)
@@ -188,5 +204,8 @@ def main(cmd: str = "smoke", tasks: str = "", out: str = "", n_samples: int = 1,
             res = c.get()
             Path(f"results/redteam_{t}.json").write_text(json.dumps(res, indent=2))
             print(t, f"pass rate {res['pass_rate']:.3f} of {res['total']}")
+    elif cmd == "push":  # --runs dpo_v1 uploads that run to RUNS[run]["repo"] (+ "-lora")
+        for r in runs.split(","):
+            print("pushed", push.remote(r, RUNS[r]["repo"]))
     else:
         raise SystemExit(f"unknown cmd {cmd}")
