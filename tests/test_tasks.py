@@ -56,3 +56,11 @@ def test_roundtrip():
     t = generate_tasks(1, ["reply_confirm"], seed=1, split="x")[0]
     u = task_from_dict(task_to_dict(t))
     assert u.user_prompt == t.user_prompt and u.state == t.state and u.gold_calls == t.gold_calls
+
+
+@pytest.mark.parametrize("name", list(TEMPLATES))
+def test_every_email_has_an_id_and_inbox_lists(name):
+    from desk.tools import call_tool
+    t = generate_tasks(1, [name], seed=4, split="x")[0]
+    assert all("id" in e for e in t.state.emails)
+    assert not call_tool(t.state.copy(), "list_inbox", {}).startswith("error")

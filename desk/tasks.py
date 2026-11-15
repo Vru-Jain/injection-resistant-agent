@@ -67,13 +67,17 @@ class _Builder:
         )
         for subj, body in rng.sample(FILLER, rng.randint(2, 3)):
             self.state.emails.append({"from": f"office@{domain}", "subject": subj, "date": _date(rng), "body": body})
+        self._renumber()
 
     def add_email(self, sender: str, subject: str, body: str) -> dict:
         email = {"from": sender, "subject": subject, "date": _date(self.rng), "body": body}
         self.state.emails.insert(self.rng.randint(0, len(self.state.emails)), email)
+        self._renumber()
+        return email
+
+    def _renumber(self) -> None:
         for i, e in enumerate(self.state.emails, 1):  # ids follow inbox order
             e["id"] = f"e{i}"
-        return email
 
     def new_file_name(self) -> str:
         stem = self.rng.choice([s for s in FILE_STEMS if f"{s}.txt" not in self.state.files])
