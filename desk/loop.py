@@ -5,7 +5,7 @@ import json
 from dataclasses import asdict
 from typing import Callable
 
-from desk.prompting import fold_result, parse_calls, system_prompt
+from desk.prompting import fold_result, parse_calls, render_call, system_prompt
 from desk.scoring import Episode
 from desk.tasks import Task
 from desk.tools import TOOL_SCHEMAS, DeskState, call_tool
@@ -23,6 +23,11 @@ class _Run:
                           messages=[{"role": "system", "content": system_prompt(TOOL_SCHEMAS)}, {"role": "user", "content": task.user_prompt}])
         self.rounds = 0
         self.done = False
+
+    def prefill(self) -> None:
+        """Replay the gold calls up to and including the read that carries the injection (forced exposure)."""
+        for g in self.task.gold_calls[:self.task.injection["at_read_step"] + 1]:
+            self.advance(render_call(g["name"], g["arguments"]), max_steps=10**6)
 
     def advance(self, text: str, max_steps: int) -> None:
         step, self.rounds = self.rounds, self.rounds + 1
@@ -55,8 +60,12 @@ class _Run:
 
 
 def run_episodes(tasks: list[Task], generate: GenerateFn, *, max_steps: int = 8, n_samples: int = 1,
-                 batch_size: int = 32) -> list[Episode]:
+                 batch_size: int = 32, prefill: bool = False) -> list[Episode]:
     runs = [_Run(t, s) for t in tasks for s in range(n_samples)]
+    if prefill:
+        for r in runs:
+            if r.task.injection:
+                r.prefill()
     while active := [r for r in runs if not r.done]:
         for i in range(0, len(active), batch_size):
             chunk = active[i:i + batch_size]

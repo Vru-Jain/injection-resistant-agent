@@ -87,3 +87,26 @@ def test_two_calls_in_one_turn_keep_roles_alternating():
     roles = [m["role"] for m in ep.messages]
     assert roles == ["system", "user", "assistant", "user", "assistant"] and len(ep.calls) == 2
     assert "Tool result for list_inbox:" in ep.messages[3]["content"] and "Tool result for read_file:" in ep.messages[3]["content"]
+
+
+def test_prefill_replays_gold_prefix_through_the_injected_read():
+    t = injected_task("multi_hop", family=6)
+    k = t.injection["at_read_step"]
+    seen = []
+
+    def gen(batch):
+        seen.append(list(batch[0]))
+        return ["The venue is somewhere."] * len(batch)
+
+    ep = run_episodes([t], gen, prefill=True)[0]
+    assert [c["name"] for c in ep.calls] == [c["name"] for c in t.gold_calls[:k + 1]]
+    assert [c["step"] for c in ep.calls] == list(range(k + 1))
+    assert t.injection["text"] in seen[0][-1]["content"] and seen[0][-1]["role"] == "user"
+    roles = [m["role"] for m in ep.messages]
+    assert roles[:2] == ["system", "user"] and all(a != b for a, b in zip(roles[1:], roles[2:]))
+
+
+def test_prefill_ignores_clean_tasks():
+    t = clean_task("read_file_fact")
+    ep = run_episodes([t], scripted(["final"]), prefill=True)[0]
+    assert ep.calls == [] and len(ep.messages) == 3
