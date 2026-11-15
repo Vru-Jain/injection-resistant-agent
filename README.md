@@ -61,7 +61,7 @@ uv run python scripts/gen_data.py
 ```
 
 ```bash
-uv run modal run modal_app.py --cmd baseline
+uv run modal run --detach modal_app.py --cmd baseline
 ```
 
 ```bash
@@ -69,11 +69,11 @@ uv run python scripts/build_pairs.py --rollouts data/rollouts/train_base_s4.json
 ```
 
 ```bash
-uv run modal run modal_app.py --cmd train
+uv run modal run --detach modal_app.py --cmd train
 ```
 
 ```bash
-uv run modal run modal_app.py --cmd evals --tag dpo_v1 --model-id dpo_v1
+uv run modal run --detach modal_app.py --cmd evals --tag dpo_v1 --model-id dpo_v1
 ```
 
 Then score each rollout with `scripts/summarise_rollouts.py`, and run `scripts/compare.py --tuned dpo_v1` and

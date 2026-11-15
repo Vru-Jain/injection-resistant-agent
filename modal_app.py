@@ -54,22 +54,25 @@ def rollout(task_rows: list[dict], out_name: str, model_id: str = BASE_MODEL, ad
     return {"jsonl": lines, "stats": stats}
 
 
-RUNS = {  # run -> (pair kinds or None for all, HF repo for merged weights; adapter repo adds "-lora")
-    "dpo_v1": (None, "Vru-Jain/tiny-aya-global-injection-dpo"),
-    "dpo_clean": (["clean"], "Vru-Jain/tiny-aya-global-desk-clean-dpo"),
+RUNS = {  # run -> settings; the merged weights go to "repo", the adapter to repo + "-lora"
+    "dpo_v1": {"kinds": None, "repo": "Vru-Jain/tiny-aya-global-injection-dpo-v1", "pairs": "train_pairs", "base": None},
+    "dpo_clean": {"kinds": ["clean"], "repo": "Vru-Jain/tiny-aya-global-desk-clean-dpo", "pairs": "train_pairs", "base": None},
+    # round 2: on-policy pairs from dpo_v1's own train rollouts, trained on top of dpo_v1 (reference = dpo_v1)
+    "dpo_v2": {"kinds": None, "repo": "Vru-Jain/tiny-aya-global-injection-dpo", "pairs": "train_pairs_r2", "base": "dpo_v1",
+               "epochs": 1, "lr": 2e-5},
 }
 
 
 @app.function(gpu="H100", timeout=5400, volumes={"/vol": vol}, secrets=secrets)
 def train(pair_rows: list[dict], run: str, kinds: list[str] | None, repo: str, beta: float = 0.1, epochs: int = 2,
-          lr: float = 3e-5, push: bool = True) -> dict:
+          lr: float = 3e-5, push: bool = True, base: str | None = None) -> dict:
     from huggingface_hub import HfApi
 
     from desk.train import merge, model_card, select_rows, train_dpo
 
-    out = f"/vol/models/{run}"
-    stats = train_dpo(select_rows(pair_rows, kinds), BASE_MODEL, f"{out}/adapter", beta=beta, epochs=epochs, lr=lr)
-    merge(BASE_MODEL, f"{out}/adapter", f"{out}/merged")
+    out, start = f"/vol/models/{run}", (_resolve(base) if base else BASE_MODEL)
+    stats = train_dpo(select_rows(pair_rows, kinds), start, f"{out}/adapter", beta=beta, epochs=epochs, lr=lr)
+    merge(start, f"{out}/adapter", f"{out}/merged")
     vol.commit()
     stats.update(run=run, kinds=kinds, repo=repo)
     if push:  # private until the release step makes everything public together
@@ -134,10 +137,10 @@ def eval_specs(tag: str, limit: int = 0, only: str = "") -> list[tuple]:
     return specs
 
 
-def train_specs(limit: int = 0) -> list[tuple]:
+def train_specs(limit: int = 0, tag: str = "base") -> list[tuple]:
     rows = _rows("data/tasks/train.jsonl", limit)
-    return [(rows, "train_base_s4", 4, 0.7, False),
-            ([r for r in rows if r["injection"]], "train_base_forced_s8", 8, 1.0, True)]
+    return [(rows, f"train_{tag}_s4", 4, 0.7, False),
+            ([r for r in rows if r["injection"]], f"train_{tag}_forced_s8", 8, 1.0, True)]
 
 
 @app.local_entrypoint()
@@ -150,15 +153,18 @@ def main(cmd: str = "smoke", tasks: str = "", out: str = "", n_samples: int = 1,
         _save(rollout.remote(clean + injected, "smoke_base", BASE_MODEL, None, 1, 0.0))
     elif cmd == "rollout":
         _save(rollout.remote(_rows(tasks, limit), out, model_id, adapter or None, n_samples, temperature, prefill=prefill))
-    elif cmd in ("baseline", "evals"):  # one container per rollout, all in parallel
-        specs = (train_specs(limit) if cmd == "baseline" else []) + eval_specs(tag, limit, splits)
+    elif cmd in ("baseline", "evals", "trainrollouts"):  # one container per rollout, all in parallel
+        specs = (train_specs(limit, tag) if cmd != "evals" else []) + (eval_specs(tag, limit, splits) if cmd != "trainrollouts" else [])
         calls = [rollout.spawn(rows, name, model_id, adapter or None, n, temp, prefill=pf) for rows, name, n, temp, pf in specs]
         for c in calls:
             _save(c.get())
     elif cmd == "train":  # every run in RUNS (or --runs a,b), one container each, in parallel
-        pairs = _rows("data/pairs/train_pairs.jsonl")
         names = runs.split(",") if runs else list(RUNS)
-        calls = {r: train.spawn(pairs, r, RUNS[r][0], RUNS[r][1]) for r in names}
+        calls = {}
+        for r in names:
+            cfg = RUNS[r]
+            hp = {k: cfg[k] for k in ("epochs", "lr") if k in cfg}
+            calls[r] = train.spawn(_rows(f"data/pairs/{cfg['pairs']}.jsonl"), r, cfg["kinds"], cfg["repo"], base=cfg["base"], **hp)
         for r, c in calls.items():
             stats = c.get()
             Path("results").mkdir(exist_ok=True)
