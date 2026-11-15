@@ -1,4 +1,4 @@
-"""Cost of 10,000 desk tasks/day: self-hosted Tiny Aya (measured on H100; assumed L4) vs a closed API.
+"""Cost of 10,000 desk tasks/day: self-hosted Tiny Aya (measured on H100) vs a closed API (assumed prices).
 
 python scripts/cost_table.py --tag dpo_v1  ->  results/cost_table.md
 Token counts and H100 throughput come from data/rollouts/<split>_<tag>_greedy.stats.json (batched HF generate).
@@ -16,7 +16,6 @@ from desk.cost import cost_table  # noqa: E402
 
 SPLITS = ["test_in_dist", "test_new_template", "test_new_family", "benign"]
 H100_PER_HOUR = 3.95  # Modal on-demand H100, as quoted in the design doc (Nov 2026)
-L4_PER_HOUR, L4_TASKS_PER_MIN = 0.80, 25  # assumption: one L4, batched serving
 API_IN, API_OUT = 2.50, 10.0  # assumption: USD per 1M tokens for a frontier closed model; check current list prices
 
 
@@ -30,9 +29,6 @@ def main(tag: str, tasks_per_day: int = 10_000) -> str:
         f"Self-host, H100 measured ({h100_tpm:.0f} tasks/min, ${H100_PER_HOUR}/h)":
             cost_table(prompt_tokens_per_task=p, completion_tokens_per_task=c, tasks_per_day=tasks_per_day, api_in_per_m=API_IN,
                        api_out_per_m=API_OUT, gpu_per_hour=H100_PER_HOUR, tasks_per_minute=h100_tpm),
-        f"Self-host, L4 assumed ({L4_TASKS_PER_MIN} tasks/min, ${L4_PER_HOUR}/h)":
-            cost_table(prompt_tokens_per_task=p, completion_tokens_per_task=c, tasks_per_day=tasks_per_day, api_in_per_m=API_IN,
-                       api_out_per_m=API_OUT, gpu_per_hour=L4_PER_HOUR, tasks_per_minute=L4_TASKS_PER_MIN),
     }
     api = next(iter(rows.values()))
     md = [f"# Cost of {tasks_per_day:,} desk tasks per day\n",
@@ -42,8 +38,9 @@ def main(tag: str, tasks_per_day: int = 10_000) -> str:
     for name, r in rows.items():
         md.append(f"| {name} | {r['selfhost_per_day']:.2f} | {r['selfhost_per_1k']:.3f} | {r['selfhost_gpu_hours_per_day']:.2f} |")
     md.append(f"| Closed API (assumed ${API_IN}/M input, ${API_OUT}/M output) | {api['api_per_day']:.2f} | {api['api_per_1k']:.3f} | - |")
-    md += ["", "Assumptions, not measurements: the L4 throughput and price, and the API prices (check current list prices before "
-           "quoting). The H100 row uses our own measured batched HF `generate` throughput, which vLLM would raise.",
+    md += ["", "The API prices are an assumption, not a measurement (check current list prices before quoting). The H100 row is "
+           "our own measured batched HF `generate` throughput, which vLLM would raise. Token counts are as measured; a model "
+           "that stops after the task instead of running to the 8-turn cap would use fewer.",
            "Self-hosting also keeps emails and files on your own hardware, which matters for an assistant that reads them."]
     out = "\n".join(md) + "\n"
     Path("results/cost_table.md").write_text(out, encoding="utf-8")

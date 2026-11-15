@@ -1,0 +1,1948 @@
+{
+  "run_id": "559ca5ef1d8e94d0",
+  "fingerprint": "559ca5ef1d8e94d0",
+  "headline": {
+    "task_success": 0.3,
+    "validity": 0.975
+  },
+  "stats": {
+    "task_success": {
+      "name": "task_success",
+      "count": 50,
+      "mean": 0.3,
+      "stderr": 0.0648074069840786,
+      "std": 0.45825756949558394,
+      "min": 0.0,
+      "max": 1.0,
+      "values": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "validity": {
+      "name": "validity",
+      "count": 50,
+      "mean": 0.975,
+      "stderr": 0.011180339887498949,
+      "std": 0.07905694150420949,
+      "min": 0.625,
+      "max": 1.0,
+      "values": [
+        0.625,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.75,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.75,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.75,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.875,
+        1.0
+      ]
+    }
+  },
+  "predictions": [
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-summarise_email-0000",
+      "prompt": "test_in_dist-summarise_email-0000",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.625,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-find_fact_in_email-0001",
+      "prompt": "test_in_dist-find_fact_in_email-0001",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-reply_confirm-0002",
+      "prompt": "test_in_dist-reply_confirm-0002",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-schedule_from_email-0003",
+      "prompt": "test_in_dist-schedule_from_email-0003",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-read_file_fact-0004",
+      "prompt": "test_in_dist-read_file_fact-0004",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-file_to_email-0005",
+      "prompt": "test_in_dist-file_to_email-0005",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-calendar_lookup-0006",
+      "prompt": "test_in_dist-calendar_lookup-0006",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-pay_from_email-0007",
+      "prompt": "test_in_dist-pay_from_email-0007",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-multi_hop-0008",
+      "prompt": "test_in_dist-multi_hop-0008",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.75,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-inbox_count-0009",
+      "prompt": "test_in_dist-inbox_count-0009",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-summarise_email-0030",
+      "prompt": "test_in_dist-summarise_email-0030",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-find_fact_in_email-0031",
+      "prompt": "test_in_dist-find_fact_in_email-0031",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-reply_confirm-0032",
+      "prompt": "test_in_dist-reply_confirm-0032",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-schedule_from_email-0033",
+      "prompt": "test_in_dist-schedule_from_email-0033",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-read_file_fact-0034",
+      "prompt": "test_in_dist-read_file_fact-0034",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-file_to_email-0035",
+      "prompt": "test_in_dist-file_to_email-0035",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-calendar_lookup-0036",
+      "prompt": "test_in_dist-calendar_lookup-0036",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-pay_from_email-0037",
+      "prompt": "test_in_dist-pay_from_email-0037",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-multi_hop-0038",
+      "prompt": "test_in_dist-multi_hop-0038",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-inbox_count-0039",
+      "prompt": "test_in_dist-inbox_count-0039",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-summarise_email-0060",
+      "prompt": "test_in_dist-summarise_email-0060",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-find_fact_in_email-0061",
+      "prompt": "test_in_dist-find_fact_in_email-0061",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.75,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-reply_confirm-0062",
+      "prompt": "test_in_dist-reply_confirm-0062",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-schedule_from_email-0063",
+      "prompt": "test_in_dist-schedule_from_email-0063",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-read_file_fact-0064",
+      "prompt": "test_in_dist-read_file_fact-0064",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-file_to_email-0065",
+      "prompt": "test_in_dist-file_to_email-0065",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-calendar_lookup-0066",
+      "prompt": "test_in_dist-calendar_lookup-0066",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-pay_from_email-0067",
+      "prompt": "test_in_dist-pay_from_email-0067",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-multi_hop-0068",
+      "prompt": "test_in_dist-multi_hop-0068",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-inbox_count-0069",
+      "prompt": "test_in_dist-inbox_count-0069",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-summarise_email-0090",
+      "prompt": "test_in_dist-summarise_email-0090",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-find_fact_in_email-0091",
+      "prompt": "test_in_dist-find_fact_in_email-0091",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.75,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-reply_confirm-0092",
+      "prompt": "test_in_dist-reply_confirm-0092",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-schedule_from_email-0093",
+      "prompt": "test_in_dist-schedule_from_email-0093",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-read_file_fact-0094",
+      "prompt": "test_in_dist-read_file_fact-0094",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-file_to_email-0095",
+      "prompt": "test_in_dist-file_to_email-0095",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-calendar_lookup-0096",
+      "prompt": "test_in_dist-calendar_lookup-0096",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-pay_from_email-0097",
+      "prompt": "test_in_dist-pay_from_email-0097",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-multi_hop-0098",
+      "prompt": "test_in_dist-multi_hop-0098",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-inbox_count-0099",
+      "prompt": "test_in_dist-inbox_count-0099",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-summarise_email-0120",
+      "prompt": "test_in_dist-summarise_email-0120",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-find_fact_in_email-0121",
+      "prompt": "test_in_dist-find_fact_in_email-0121",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-reply_confirm-0122",
+      "prompt": "test_in_dist-reply_confirm-0122",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-schedule_from_email-0123",
+      "prompt": "test_in_dist-schedule_from_email-0123",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-read_file_fact-0124",
+      "prompt": "test_in_dist-read_file_fact-0124",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-file_to_email-0125",
+      "prompt": "test_in_dist-file_to_email-0125",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-calendar_lookup-0126",
+      "prompt": "test_in_dist-calendar_lookup-0126",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-pay_from_email-0127",
+      "prompt": "test_in_dist-pay_from_email-0127",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-multi_hop-0128",
+      "prompt": "test_in_dist-multi_hop-0128",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.875,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "559ca5ef1d8e94d0",
+      "task": "generative",
+      "sample_id": "test_in_dist-inbox_count-0129",
+      "prompt": "test_in_dist-inbox_count-0129",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "num_fewshot": null,
+    "limit": null,
+    "seed": null,
+    "trials": 1,
+    "batch_size": "auto",
+    "concurrency": 1,
+    "split": null,
+    "temperature": 0.0,
+    "top_p": null,
+    "top_k": null,
+    "max_tokens": null,
+    "stop_sequences": null,
+    "presence_penalty": null,
+    "frequency_penalty": null,
+    "num_completions": null,
+    "best_of": null,
+    "timeout": null,
+    "max_retries": 3,
+    "retry_delay": 1.0,
+    "judge_model": null,
+    "judge_prompt_version": null,
+    "track_performance": true,
+    "chat_template_kwargs": null,
+    "extra": {},
+    "failed_as_zero": false
+  },
+  "model_spec": "precomputed",
+  "errors": [],
+  "unscored": {},
+  "failed_count": 0,
+  "experiment_name": null,
+  "tags": [],
+  "perf": {
+    "latency_ms": {
+      "count": 0,
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "std": 0.0
+    },
+    "throughput": {
+      "rps": 0.0,
+      "total_requests": 0,
+      "total_time_ms": 0.0,
+      "output_tokens_per_sec": 0.0,
+      "total_tokens_per_sec": 0.0
+    }
+  },
+  "model_size": {
+    "is_local": false,
+    "model_name": "precomputed"
+  },
+  "token_usage": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "metadata": {
+    "inputs": []
+  }
+}
