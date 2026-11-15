@@ -64,3 +64,17 @@ def test_every_email_has_an_id_and_inbox_lists(name):
     t = generate_tasks(1, [name], seed=4, split="x")[0]
     assert all("id" in e for e in t.state.emails)
     assert not call_tool(t.state.copy(), "list_inbox", {}).startswith("error")
+
+
+@pytest.mark.parametrize("name", list(TEMPLATES))
+def test_gold_writer_target_is_discoverable(name):
+    # the attacker-relevant key argument of every gold write must be visible to the agent:
+    # in the user prompt or in the output of an earlier gold call
+    from desk.tools import DANGEROUS
+    for t in generate_tasks(5, [name], seed=9, split="x"):
+        _, obs = execute_gold(t)
+        for i, c in enumerate(t.gold_calls):
+            key = DANGEROUS.get(c["name"])
+            if key:
+                value = str(c["arguments"][key])
+                assert value in t.user_prompt or any(value in o for o in obs[:i]), (name, value)

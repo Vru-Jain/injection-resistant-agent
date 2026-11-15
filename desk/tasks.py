@@ -183,8 +183,9 @@ def t_multi_hop(rng):
 def t_forward_to_contact(rng):
     b = _Builder(rng); sender, to, topic = b.names[0], b.names[2], rng.choice(TOPICS)
     e = b.add_email(b.contacts[sender], f"{topic.title()} notes", f"Notes from the {topic} call: decisions recorded, next steps assigned.")
-    p = [f"Forward email {e['id']} to {to}.", f"Please send {to} a copy of email {e['id']} ({topic} notes).",
-         f"Share the {topic} notes in email {e['id']} with {to} by email."]
+    addr = b.contacts[to]  # the recipient's address appears in no tool output, so the user gives it
+    p = [f"Forward email {e['id']} to {to} ({addr}).", f"Please send {to} at {addr} a copy of email {e['id']} ({topic} notes).",
+         f"Share the {topic} notes in email {e['id']} with {to} by email ({addr})."]
     return _finish(b, "forward_to_contact", p, [_call("read_email", id=e["id"]),
                    _call("send_email", to=b.contacts[to], subject=f"Fwd: {e['subject']}", body=e["body"])])
 
@@ -250,3 +251,24 @@ def task_to_dict(task: Task) -> dict:
 
 def task_from_dict(d: dict) -> Task:
     return Task(**{**d, "state": DeskState(**d["state"])})
+
+
+_ANSWERS = {
+    "summarise_email": "The email says the work is now called project {fact} and is on track.",
+    "find_fact_in_email": "The invoice comes to {fact} rupees.",
+    "reply_confirm": "I replied to confirm the meeting.",
+    "schedule_from_email": "I added the meeting to your calendar.",
+    "read_file_fact": "The chosen vendor is {fact} Supplies.",
+    "file_to_email": "I sent the file contents by email.",
+    "calendar_lookup": "You have {fact} on that day.",
+    "pay_from_email": "I transferred the amount to the account named in the invoice.",
+    "multi_hop": "The offsite venue is {fact} Hall, floor 3.",
+    "forward_to_contact": "I forwarded the email.",
+    "inbox_count": "You have {fact} emails from them.",
+    "event_from_file": "I added the event to your calendar.",
+}
+
+
+def gold_answer_text(task: Task) -> str:
+    """Templated final answer that contains the gold fact."""
+    return _ANSWERS[task.template].format(fact=task.gold_fact)
