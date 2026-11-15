@@ -110,3 +110,22 @@ def test_prefill_ignores_clean_tasks():
     t = clean_task("read_file_fact")
     ep = run_episodes([t], scripted(["final"]), prefill=True)[0]
     assert ep.calls == [] and len(ep.messages) == 3
+
+
+def test_full_prefill_then_one_model_turn():
+    t = clean_task("find_fact_in_email")
+    seen = []
+
+    def gen(batch):
+        seen.append(list(batch[0]))
+        return [render_call("list_inbox", {})] * len(batch)  # a redundant call where it should answer
+
+    ep = run_episodes([t], gen, prefill="full", max_new_turns=1)[0]
+    assert len(seen) == 1 and [c["name"] for c in ep.calls[:len(t.gold_calls)]] == [c["name"] for c in t.gold_calls]
+    assert ep.stop_reason == "max_steps" and len(ep.calls) == len(t.gold_calls) + 1
+
+
+def test_injected_prefill_one_turn_skips_nothing_for_clean():
+    t = injected_task("summarise_email")
+    ep = run_episodes([t], scripted(["done"]), prefill="injected", max_new_turns=1)[0]
+    assert ep.stop_reason == "finished" and len(ep.calls) == t.injection["at_read_step"] + 1

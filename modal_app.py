@@ -33,7 +33,8 @@ app = modal.App("injection-resistant-agent", image=image)
 
 @app.function(gpu="H100", timeout=3600, volumes={"/vol": vol}, secrets=secrets)
 def rollout(task_rows: list[dict], out_name: str, model_id: str = BASE_MODEL, adapter: str | None = None,
-            n_samples: int = 1, temperature: float = 0.0, batch_size: int = 64, prefill: bool = False) -> dict:
+            n_samples: int = 1, temperature: float = 0.0, batch_size: int = 64, prefill: bool | str = False,
+            max_new_turns: int | None = None) -> dict:
     from desk.hf_generate import load_model, make_generate
     from desk.loop import episode_to_dict, run_episodes
 
@@ -43,7 +44,8 @@ def rollout(task_rows: list[dict], out_name: str, model_id: str = BASE_MODEL, ad
     t0 = time.time()
     model, tok = load_model(model_id, adapter)
     gen = make_generate(model, tok, temperature=temperature, seed=0)
-    eps = run_episodes([task_from_dict(r) for r in task_rows], gen, n_samples=n_samples, batch_size=batch_size, prefill=prefill)
+    eps = run_episodes([task_from_dict(r) for r in task_rows], gen, n_samples=n_samples, batch_size=batch_size, prefill=prefill,
+                       max_new_turns=max_new_turns)
     lines = "".join(json.dumps(episode_to_dict(e), ensure_ascii=False) + "\n" for e in eps)
     stats = {**gen.stats, "out": out_name, "model_id": model_id, "adapter": adapter, "n_tasks": len(task_rows),
              "n_samples": n_samples, "temperature": temperature, "prefill": prefill, "wall_seconds": time.time() - t0}
@@ -125,27 +127,35 @@ EVAL_SPLITS = ["test_in_dist", "test_new_template", "test_new_family", "benign"]
 INJECTED_SPLITS = ["test_in_dist", "test_new_template", "test_new_family"]
 
 
-def eval_specs(tag: str, limit: int = 0, only: str = "") -> list[tuple]:
+def eval_specs(tag: str, limit: int = 0, only: str = "", greedy_only: bool = False) -> list[tuple]:
     """(rows, out_name, n_samples, temperature, prefill) for every eval rollout of one model."""
     specs = []
     for split in [s for s in EVAL_SPLITS if not only or s in only.split(",")]:
         rows = _rows(f"data/tasks/{split}.jsonl", limit)
-        specs += [(rows, f"{split}_{tag}_greedy", 1, 0.0, False), (rows, f"{split}_{tag}_s4", 4, 0.7, False)]
+        specs += [(rows, f"{split}_{tag}_greedy", 1, 0.0, False, None)]
+        if not greedy_only:
+            specs += [(rows, f"{split}_{tag}_s4", 4, 0.7, False, None)]
         if split in INJECTED_SPLITS:  # forced exposure: gold prefix through the injected read, then the model
             inj = [r for r in rows if r["injection"]]
-            specs += [(inj, f"{split}_{tag}_forced_greedy", 1, 0.0, True), (inj, f"{split}_{tag}_forced_s4", 4, 0.7, True)]
+            specs += [(inj, f"{split}_{tag}_forced_greedy", 1, 0.0, True, None)]
+            if not greedy_only:
+                specs += [(inj, f"{split}_{tag}_forced_s4", 4, 0.7, True, None)]
     return specs
 
 
 def train_specs(limit: int = 0, tag: str = "base") -> list[tuple]:
     rows = _rows("data/tasks/train.jsonl", limit)
-    return [(rows, f"train_{tag}_s4", 4, 0.7, False),
-            ([r for r in rows if r["injection"]], f"train_{tag}_forced_s8", 8, 1.0, True)]
+    if tag == "base":
+        return [(rows, "train_base_s4", 4, 0.7, False, None),
+                ([r for r in rows if r["injection"]], "train_base_forced_s8", 8, 1.0, True, None)]
+    # round 2: one model turn at each decision point (after the last gold call; after the injected read)
+    return [(rows, f"train_{tag}_stop_s4", 4, 0.7, "full", 1),
+            ([r for r in rows if r["injection"]], f"train_{tag}_forced1_s8", 8, 1.0, "injected", 1)]
 
 
 @app.local_entrypoint()
 def main(cmd: str = "smoke", tasks: str = "", out: str = "", n_samples: int = 1, temperature: float = 0.0,
-         model_id: str = BASE_MODEL, adapter: str = "", limit: int = 0, tag: str = "base", prefill: bool = False, splits: str = "", runs: str = ""):
+         model_id: str = BASE_MODEL, adapter: str = "", limit: int = 0, tag: str = "base", prefill: bool = False, splits: str = "", runs: str = "", greedy_only: bool = False):
     if cmd == "smoke":
         rows = _rows("data/tasks/train.jsonl")
         clean = [r for r in rows if not r["injection"]][:20]
@@ -154,8 +164,9 @@ def main(cmd: str = "smoke", tasks: str = "", out: str = "", n_samples: int = 1,
     elif cmd == "rollout":
         _save(rollout.remote(_rows(tasks, limit), out, model_id, adapter or None, n_samples, temperature, prefill=prefill))
     elif cmd in ("baseline", "evals", "trainrollouts"):  # one container per rollout, all in parallel
-        specs = (train_specs(limit, tag) if cmd != "evals" else []) + (eval_specs(tag, limit, splits) if cmd != "trainrollouts" else [])
-        calls = [rollout.spawn(rows, name, model_id, adapter or None, n, temp, prefill=pf) for rows, name, n, temp, pf in specs]
+        specs = (train_specs(limit, tag) if cmd != "evals" else []) + (eval_specs(tag, limit, splits, greedy_only) if cmd != "trainrollouts" else [])
+        calls = [rollout.spawn(rows, name, model_id, adapter or None, n, temp, prefill=pf, max_new_turns=mt)
+                 for rows, name, n, temp, pf, mt in specs]
         for c in calls:
             _save(c.get())
     elif cmd == "train":  # every run in RUNS (or --runs a,b), one container each, in parallel

@@ -24,9 +24,9 @@ class _Run:
         self.rounds = 0
         self.done = False
 
-    def prefill(self) -> None:
-        """Replay the gold calls up to and including the read that carries the injection (forced exposure)."""
-        for g in self.task.gold_calls[:self.task.injection["at_read_step"] + 1]:
+    def prefill(self, upto: int) -> None:
+        """Replay the first `upto` gold calls before the model takes over."""
+        for g in self.task.gold_calls[:upto]:
             self.advance(render_call(g["name"], g["arguments"]), max_steps=10**6)
 
     def advance(self, text: str, max_steps: int) -> None:
@@ -60,17 +60,24 @@ class _Run:
 
 
 def run_episodes(tasks: list[Task], generate: GenerateFn, *, max_steps: int = 8, n_samples: int = 1,
-                 batch_size: int = 32, prefill: bool = False) -> list[Episode]:
+                 batch_size: int = 32, prefill: bool | str = False, max_new_turns: int | None = None) -> list[Episode]:
+    """prefill: False; True or "injected" = gold calls through the injected read (forced exposure, injected tasks only);
+    "full" = every gold call (the next turn should be the final answer). max_new_turns caps model turns after it."""
     runs = [_Run(t, s) for t in tasks for s in range(n_samples)]
-    if prefill:
-        for r in runs:
-            if r.task.injection:
-                r.prefill()
+    limits = {}
+    for r in runs:
+        upto = 0
+        if prefill == "full":
+            upto = len(r.task.gold_calls)
+        elif prefill and r.task.injection:
+            upto = r.task.injection["at_read_step"] + 1
+        r.prefill(upto)
+        limits[id(r)] = r.rounds + max_new_turns if max_new_turns else max_steps
     while active := [r for r in runs if not r.done]:
         for i in range(0, len(active), batch_size):
             chunk = active[i:i + batch_size]
             for r, text in zip(chunk, generate([r.ep.messages for r in chunk])):
-                r.advance(text or "", max_steps)
+                r.advance(text or "", limits[id(r)])
     return [r.ep for r in runs]
 
 
