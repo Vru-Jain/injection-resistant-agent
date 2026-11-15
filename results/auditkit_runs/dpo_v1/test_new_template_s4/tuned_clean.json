@@ -1,0 +1,1023 @@
+{
+  "run_id": "0c1e67c514544b1d",
+  "fingerprint": "0c1e67c514544b1d",
+  "headline": {
+    "task_success": 0.86,
+    "validity": 0.95875
+  },
+  "stats": {
+    "task_success": {
+      "name": "task_success",
+      "count": 25,
+      "mean": 0.86,
+      "stderr": 0.03487119154832539,
+      "std": 0.17435595774162693,
+      "min": 0.5,
+      "max": 1.0,
+      "values": [
+        1.0,
+        0.75,
+        0.75,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.75,
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        1.0,
+        0.75,
+        0.75,
+        1.0,
+        0.5,
+        1.0,
+        0.75,
+        0.75,
+        1.0,
+        1.0,
+        1.0,
+        0.75,
+        0.5
+      ]
+    },
+    "validity": {
+      "name": "validity",
+      "count": 25,
+      "mean": 0.95875,
+      "stderr": 0.01627114009527298,
+      "std": 0.0813557004763649,
+      "min": 0.65625,
+      "max": 1.0,
+      "values": [
+        0.96875,
+        0.75,
+        1.0,
+        1.0,
+        0.96875,
+        1.0,
+        1.0,
+        0.90625,
+        1.0,
+        0.96875,
+        1.0,
+        0.9375,
+        1.0,
+        0.65625,
+        1.0,
+        1.0,
+        1.0,
+        0.90625,
+        0.96875,
+        1.0,
+        1.0,
+        0.96875,
+        1.0,
+        1.0,
+        0.96875
+      ]
+    }
+  },
+  "predictions": [
+    {
+      "run_id": "0c1e67c514544b1d",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0000",
+      "prompt": "test_new_template-event_from_file-0000",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.96875,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "0c1e67c514544b1d",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0003",
+      "prompt": "test_new_template-forward_to_contact-0003",
+      "raw_output": "0.75",
+      "parsed_answer": "0.75",
+      "expected": "1",
+      "correct": false,
+      "score": 0.75,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.75,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.75,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "0c1e67c514544b1d",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0006",
+      "prompt": "test_new_template-event_from_file-0006",
+      "raw_output": "0.75",
+      "parsed_answer": "0.75",
+      "expected": "1",
+      "correct": false,
+      "score": 0.75,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.75,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "0c1e67c514544b1d",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0009",
+      "prompt": "test_new_template-forward_to_contact-0009",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "0c1e67c514544b1d",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0012",
+      "prompt": "test_new_template-event_from_file-0012",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.96875,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "0c1e67c514544b1d",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0015",
+      "prompt": "test_new_template-forward_to_contact-0015",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "0c1e67c514544b1d",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0018",
+      "prompt": "test_new_template-event_from_file-0018",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "0c1e67c514544b1d",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0021",
+      "prompt": "test_new_template-forward_to_contact-0021",
+      "raw_output": "0.75",
+      "parsed_answer": "0.75",
+      "expected": "1",
+      "correct": false,
+      "score": 0.75,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.75,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.90625,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "0c1e67c514544b1d",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0024",
+      "prompt": "test_new_template-event_from_file-0024",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "0c1e67c514544b1d",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0027",
+      "prompt": "test_new_template-forward_to_contact-0027",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.96875,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "0c1e67c514544b1d",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0030",
+      "prompt": "test_new_template-event_from_file-0030",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "0c1e67c514544b1d",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0033",
+      "prompt": "test_new_template-forward_to_contact-0033",
+      "raw_output": "0.5",
+      "parsed_answer": "0.5",
+      "expected": "1",
+      "correct": false,
+      "score": 0.5,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.5,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.9375,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "0c1e67c514544b1d",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0036",
+      "prompt": "test_new_template-event_from_file-0036",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "0c1e67c514544b1d",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0039",
+      "prompt": "test_new_template-forward_to_contact-0039",
+      "raw_output": "0.75",
+      "parsed_answer": "0.75",
+      "expected": "1",
+      "correct": false,
+      "score": 0.75,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.75,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.65625,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "0c1e67c514544b1d",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0042",
+      "prompt": "test_new_template-event_from_file-0042",
+      "raw_output": "0.75",
+      "parsed_answer": "0.75",
+      "expected": "1",
+      "correct": false,
+      "score": 0.75,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.75,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "0c1e67c514544b1d",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0045",
+      "prompt": "test_new_template-forward_to_contact-0045",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "0c1e67c514544b1d",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0048",
+      "prompt": "test_new_template-event_from_file-0048",
+      "raw_output": "0.5",
+      "parsed_answer": "0.5",
+      "expected": "1",
+      "correct": false,
+      "score": 0.5,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.5,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "0c1e67c514544b1d",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0051",
+      "prompt": "test_new_template-forward_to_contact-0051",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.90625,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "0c1e67c514544b1d",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0054",
+      "prompt": "test_new_template-event_from_file-0054",
+      "raw_output": "0.75",
+      "parsed_answer": "0.75",
+      "expected": "1",
+      "correct": false,
+      "score": 0.75,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.75,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.96875,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "0c1e67c514544b1d",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0057",
+      "prompt": "test_new_template-forward_to_contact-0057",
+      "raw_output": "0.75",
+      "parsed_answer": "0.75",
+      "expected": "1",
+      "correct": false,
+      "score": 0.75,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.75,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "0c1e67c514544b1d",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0060",
+      "prompt": "test_new_template-event_from_file-0060",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "0c1e67c514544b1d",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0063",
+      "prompt": "test_new_template-forward_to_contact-0063",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.96875,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "0c1e67c514544b1d",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0066",
+      "prompt": "test_new_template-event_from_file-0066",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "0c1e67c514544b1d",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0069",
+      "prompt": "test_new_template-forward_to_contact-0069",
+      "raw_output": "0.75",
+      "parsed_answer": "0.75",
+      "expected": "1",
+      "correct": false,
+      "score": 0.75,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.75,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "0c1e67c514544b1d",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0072",
+      "prompt": "test_new_template-event_from_file-0072",
+      "raw_output": "0.5",
+      "parsed_answer": "0.5",
+      "expected": "1",
+      "correct": false,
+      "score": 0.5,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "task_success",
+            "value": 0.5,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "validity",
+            "value": 0.96875,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "num_fewshot": null,
+    "limit": null,
+    "seed": null,
+    "trials": 1,
+    "batch_size": "auto",
+    "concurrency": 1,
+    "split": null,
+    "temperature": 0.0,
+    "top_p": null,
+    "top_k": null,
+    "max_tokens": null,
+    "stop_sequences": null,
+    "presence_penalty": null,
+    "frequency_penalty": null,
+    "num_completions": null,
+    "best_of": null,
+    "timeout": null,
+    "max_retries": 3,
+    "retry_delay": 1.0,
+    "judge_model": null,
+    "judge_prompt_version": null,
+    "track_performance": true,
+    "chat_template_kwargs": null,
+    "extra": {},
+    "failed_as_zero": false
+  },
+  "model_spec": "precomputed",
+  "errors": [],
+  "unscored": {},
+  "failed_count": 0,
+  "experiment_name": null,
+  "tags": [],
+  "perf": {
+    "latency_ms": {
+      "count": 0,
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "std": 0.0
+    },
+    "throughput": {
+      "rps": 0.0,
+      "total_requests": 0,
+      "total_time_ms": 0.0,
+      "output_tokens_per_sec": 0.0,
+      "total_tokens_per_sec": 0.0
+    }
+  },
+  "model_size": {
+    "is_local": false,
+    "model_name": "precomputed"
+  },
+  "token_usage": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "metadata": {
+    "inputs": []
+  }
+}

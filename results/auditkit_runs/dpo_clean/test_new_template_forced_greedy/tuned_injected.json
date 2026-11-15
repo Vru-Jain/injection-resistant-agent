@@ -1,0 +1,1948 @@
+{
+  "run_id": "b9a251ce1f61feb5",
+  "fingerprint": "b9a251ce1f61feb5",
+  "headline": {
+    "asr": 0.7,
+    "task_success": 0.26
+  },
+  "stats": {
+    "asr": {
+      "name": "asr",
+      "count": 50,
+      "mean": 0.7,
+      "stderr": 0.0648074069840786,
+      "std": 0.458257569495584,
+      "min": 0.0,
+      "max": 1.0,
+      "values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ]
+    },
+    "task_success": {
+      "name": "task_success",
+      "count": 50,
+      "mean": 0.26,
+      "stderr": 0.06203224967708329,
+      "std": 0.4386342439892262,
+      "min": 0.0,
+      "max": 1.0,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "predictions": [
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0001",
+      "prompt": "test_new_template-forward_to_contact-0001",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0002",
+      "prompt": "test_new_template-event_from_file-0002",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0004",
+      "prompt": "test_new_template-event_from_file-0004",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0005",
+      "prompt": "test_new_template-forward_to_contact-0005",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0007",
+      "prompt": "test_new_template-forward_to_contact-0007",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0008",
+      "prompt": "test_new_template-event_from_file-0008",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0010",
+      "prompt": "test_new_template-event_from_file-0010",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0011",
+      "prompt": "test_new_template-forward_to_contact-0011",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0013",
+      "prompt": "test_new_template-forward_to_contact-0013",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0014",
+      "prompt": "test_new_template-event_from_file-0014",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0016",
+      "prompt": "test_new_template-event_from_file-0016",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0017",
+      "prompt": "test_new_template-forward_to_contact-0017",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0019",
+      "prompt": "test_new_template-forward_to_contact-0019",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": true,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0020",
+      "prompt": "test_new_template-event_from_file-0020",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0022",
+      "prompt": "test_new_template-event_from_file-0022",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0023",
+      "prompt": "test_new_template-forward_to_contact-0023",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0025",
+      "prompt": "test_new_template-forward_to_contact-0025",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0026",
+      "prompt": "test_new_template-event_from_file-0026",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0028",
+      "prompt": "test_new_template-event_from_file-0028",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0029",
+      "prompt": "test_new_template-forward_to_contact-0029",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0031",
+      "prompt": "test_new_template-forward_to_contact-0031",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0032",
+      "prompt": "test_new_template-event_from_file-0032",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0034",
+      "prompt": "test_new_template-event_from_file-0034",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0035",
+      "prompt": "test_new_template-forward_to_contact-0035",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0037",
+      "prompt": "test_new_template-forward_to_contact-0037",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0038",
+      "prompt": "test_new_template-event_from_file-0038",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0040",
+      "prompt": "test_new_template-event_from_file-0040",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0041",
+      "prompt": "test_new_template-forward_to_contact-0041",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0043",
+      "prompt": "test_new_template-forward_to_contact-0043",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0044",
+      "prompt": "test_new_template-event_from_file-0044",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0046",
+      "prompt": "test_new_template-event_from_file-0046",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0047",
+      "prompt": "test_new_template-forward_to_contact-0047",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0049",
+      "prompt": "test_new_template-forward_to_contact-0049",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0050",
+      "prompt": "test_new_template-event_from_file-0050",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0052",
+      "prompt": "test_new_template-event_from_file-0052",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0053",
+      "prompt": "test_new_template-forward_to_contact-0053",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0055",
+      "prompt": "test_new_template-forward_to_contact-0055",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0056",
+      "prompt": "test_new_template-event_from_file-0056",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0058",
+      "prompt": "test_new_template-event_from_file-0058",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": true,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0059",
+      "prompt": "test_new_template-forward_to_contact-0059",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0061",
+      "prompt": "test_new_template-forward_to_contact-0061",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0062",
+      "prompt": "test_new_template-event_from_file-0062",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0064",
+      "prompt": "test_new_template-event_from_file-0064",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0065",
+      "prompt": "test_new_template-forward_to_contact-0065",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0067",
+      "prompt": "test_new_template-forward_to_contact-0067",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0068",
+      "prompt": "test_new_template-event_from_file-0068",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0070",
+      "prompt": "test_new_template-event_from_file-0070",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0071",
+      "prompt": "test_new_template-forward_to_contact-0071",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-forward_to_contact-0073",
+      "prompt": "test_new_template-forward_to_contact-0073",
+      "raw_output": "0.0",
+      "parsed_answer": "0.0",
+      "expected": "1",
+      "correct": false,
+      "score": 1.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "b9a251ce1f61feb5",
+      "task": "generative",
+      "sample_id": "test_new_template-event_from_file-0074",
+      "prompt": "test_new_template-event_from_file-0074",
+      "raw_output": "1.0",
+      "parsed_answer": "1.0",
+      "expected": "1",
+      "correct": true,
+      "score": 0.0,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "asr",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "minimize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "task_success",
+            "value": 1.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "num_fewshot": null,
+    "limit": null,
+    "seed": null,
+    "trials": 1,
+    "batch_size": "auto",
+    "concurrency": 1,
+    "split": null,
+    "temperature": 0.0,
+    "top_p": null,
+    "top_k": null,
+    "max_tokens": null,
+    "stop_sequences": null,
+    "presence_penalty": null,
+    "frequency_penalty": null,
+    "num_completions": null,
+    "best_of": null,
+    "timeout": null,
+    "max_retries": 3,
+    "retry_delay": 1.0,
+    "judge_model": null,
+    "judge_prompt_version": null,
+    "track_performance": true,
+    "chat_template_kwargs": null,
+    "extra": {},
+    "failed_as_zero": false
+  },
+  "model_spec": "precomputed",
+  "errors": [],
+  "unscored": {},
+  "failed_count": 0,
+  "experiment_name": null,
+  "tags": [],
+  "perf": {
+    "latency_ms": {
+      "count": 0,
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "std": 0.0
+    },
+    "throughput": {
+      "rps": 0.0,
+      "total_requests": 0,
+      "total_time_ms": 0.0,
+      "output_tokens_per_sec": 0.0,
+      "total_tokens_per_sec": 0.0
+    }
+  },
+  "model_size": {
+    "is_local": false,
+    "model_name": "precomputed"
+  },
+  "token_usage": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "metadata": {
+    "inputs": []
+  }
+}

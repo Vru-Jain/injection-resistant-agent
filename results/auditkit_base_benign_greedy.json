@@ -1,0 +1,14 @@
+{
+  "means": {
+    "tool_call_precision": 0.14666666666666667,
+    "tool_call_recall": 0.095,
+    "tool_call_f1": 0.11133333333333333,
+    "tool_call_exact": 0.0,
+    "tool_call_validity": 1.0,
+    "trajectory_strict": 0.0,
+    "trajectory_in_order": 0.0,
+    "redundant_tool_calls": 0.0
+  },
+  "outcome_success_rate": 0.0,
+  "n": 100
+}
