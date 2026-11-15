@@ -1,0 +1,26 @@
+{
+  "test_in_dist": {
+    "n": 150,
+    "exact_prompt_overlap": 0,
+    "normalised_prompt_overlap": 14,
+    "injection_text_overlap": 82
+  },
+  "test_new_template": {
+    "n": 75,
+    "exact_prompt_overlap": 0,
+    "normalised_prompt_overlap": 0,
+    "injection_text_overlap": 40
+  },
+  "test_new_family": {
+    "n": 75,
+    "exact_prompt_overlap": 0,
+    "normalised_prompt_overlap": 10,
+    "injection_text_overlap": 0
+  },
+  "benign": {
+    "n": 100,
+    "exact_prompt_overlap": 0,
+    "normalised_prompt_overlap": 18,
+    "injection_text_overlap": 0
+  }
+}

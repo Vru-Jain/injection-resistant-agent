@@ -1,0 +1,17 @@
+{
+  "n": 2103,
+  "by_kind": {
+    "clean": 1005,
+    "injected_task": 732,
+    "injected": 366
+  },
+  "by_family": {
+    "1": 260,
+    "2": 214,
+    "3": 168,
+    "4": 192,
+    "5": 264
+  },
+  "clean_share": 0.47788873038516405,
+  "n_tasks_with_pairs": 553
+}
