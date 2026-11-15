@@ -71,10 +71,10 @@ EVAL_SPLITS = ["test_in_dist", "test_new_template", "test_new_family", "benign"]
 INJECTED_SPLITS = ["test_in_dist", "test_new_template", "test_new_family"]
 
 
-def eval_specs(tag: str, limit: int = 0) -> list[tuple]:
+def eval_specs(tag: str, limit: int = 0, only: str = "") -> list[tuple]:
     """(rows, out_name, n_samples, temperature, prefill) for every eval rollout of one model."""
     specs = []
-    for split in EVAL_SPLITS:
+    for split in [s for s in EVAL_SPLITS if not only or s in only.split(",")]:
         rows = _rows(f"data/tasks/{split}.jsonl", limit)
         specs += [(rows, f"{split}_{tag}_greedy", 1, 0.0, False), (rows, f"{split}_{tag}_s4", 4, 0.7, False)]
         if split in INJECTED_SPLITS:  # forced exposure: gold prefix through the injected read, then the model
@@ -91,7 +91,7 @@ def train_specs(limit: int = 0) -> list[tuple]:
 
 @app.local_entrypoint()
 def main(cmd: str = "smoke", tasks: str = "", out: str = "", n_samples: int = 1, temperature: float = 0.0,
-         model_id: str = BASE_MODEL, adapter: str = "", limit: int = 0, tag: str = "base", prefill: bool = False):
+         model_id: str = BASE_MODEL, adapter: str = "", limit: int = 0, tag: str = "base", prefill: bool = False, splits: str = ""):
     if cmd == "smoke":
         rows = _rows("data/tasks/train.jsonl")
         clean = [r for r in rows if not r["injection"]][:20]
@@ -100,7 +100,7 @@ def main(cmd: str = "smoke", tasks: str = "", out: str = "", n_samples: int = 1,
     elif cmd == "rollout":
         _save(rollout.remote(_rows(tasks, limit), out, model_id, adapter or None, n_samples, temperature, prefill=prefill))
     elif cmd in ("baseline", "evals"):  # one container per rollout, all in parallel
-        specs = (train_specs(limit) if cmd == "baseline" else []) + eval_specs(tag, limit)
+        specs = (train_specs(limit) if cmd == "baseline" else []) + eval_specs(tag, limit, splits)
         calls = [rollout.spawn(rows, name, model_id, adapter or None, n, temp, prefill=pf) for rows, name, n, temp, pf in specs]
         for c in calls:
             _save(c.get())
